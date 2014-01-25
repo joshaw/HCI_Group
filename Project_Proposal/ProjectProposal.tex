@@ -1,0 +1,100 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% PAGE DIMENSIONS
+\usepackage[top=0.6in, left=0.8in, right=0.8in, bottom=0.7in]{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margins=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+%\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{mathtools} % for math environments like align
+\usepackage{amssymb} % for symbols like \therefore
+
+%%% OPTIONAL PACKAGES
+%\usepackage{braket}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+%\usepackage{sectsty}
+%\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+
+%%% ToC (table of contents) APPEARANCE
+%\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+%\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+%\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+%\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+% \author{Josh Wainwright \\ UID:1079596}
+\author{}
+
+\title{Human Computer Interaction \\ Project Proposal}
+\author{%
+    Rebecca Devney \\
+    Aasima Pathan \\
+    Josh Wainwright \\
+    Andrew Walker
+}
+\date{27th January 2014}
+
+\begin{document}
+
+\maketitle
+
+\section{Problem Situation}
+\label{sec:problem_situation}
+
+If you currently want to book sports facilities, the only way to search is
+directly through the individual sports center's websites, or through direct
+communication. If someone is flexible in the location or choice of sport, they
+are required to search multiple locations to find the best compromise.
+
+In addition to the difficulties of checking multiple websites, often each of
+these websites are unintuitive and difficult to use, requiring the user to know
+exactly when and where they want to use the facilities and often not giving
+clear information about other possible factors such as cost.
+
+% section problem_situation (end)
+
+\section{Proposed Solution}
+\label{sec:proposed_solution}
+
+Therefore, we propose:
+\begin{itemize}
+    \item A booking system for multi-activity, multi-location sport facilities,
+    \item simple, clean phone/web app;
+\end{itemize}
+which would:
+\begin{itemize}
+    \item display all available facilities for all (selected) sports within
+        given radius,
+    \item allow comparison by price, time, sport and location,
+    \item for simplicity, allow selection of time, court, etc., but leave
+        payment handling to the sports center chosen, and
+    \item does not require account.
+\end{itemize}
+
+% section proposed_solution (end)
+
+\end{document}

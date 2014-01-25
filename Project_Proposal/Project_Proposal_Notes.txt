@@ -1,0 +1,31 @@
+﻿Project Proposal
+
+
+If you currently want to book sports facilities, the only way to search is directly through the individual sports center’s websites, or through direct communication. If someone is flexible in the location or choice of sport, they are required to search multiple locations to find the best compromise.
+
+
+In addition to the difficulties of checking multiple websites, often each of these websites are unintuitive and difficult to use, requiring the user to know exactly when and where they want to use the facilities and often not giving clear information about other possible factors such as cost.
+
+
+Therefore, we propose:
+
+
+- A booking system for multi-activity, multi-location sport facilities,
+
+
+- simple, clean phone/web app;
+
+
+which would:
+
+
+- display all available facilities for all (selected) sports within given radius,
+
+
+- allow comparison by price, time, sport and location and,
+
+
+- for simplicity, allows selection of time, court, etc., but leaves payment handling to the sports center chosen, 
+
+
+- doesn’t require account.
