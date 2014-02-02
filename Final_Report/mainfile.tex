@@ -2,7 +2,7 @@
 % !TEX encoding = UTF-8 Unicode
 
 %\documentclass[a4paper,twoside]{article}%                                        use larger type; default would be 10pt
-\documentclass[a4paper]{article}%                                                 use larger type; default would be 10pt
+\documentclass[a4paper,draft]{article}%                                                 use larger type; default would be 10pt
 \usepackage[utf8]{inputenc}%                                                      set input encoding (not needed with XeLaTeX)
 
 %%% PAGE DIMENSIONS ------------------------------------------------------------
@@ -69,10 +69,17 @@
 \newpage
 \tableofcontents
 \addcontentsline{toc}{section}{Contents}
+\newpage
+
+\section{Review of Related Work}
+\label{sec:review_of_related_work}
 
 \input{../Review_of_related_work/Review_of_user_input_methods.tex}
 \input{../Review_of_related_work/Current_booking_apps.tex}
 \input{../Review_of_related_work/Review_of_current_sports_booking_systems.tex}
+\input{../Review_of_related_work/review_of_related_work_app_considerations.tex}
+
+% section review_of_related_work (end)
 
 \bibliographystyle{plain}
 \bibliography{references}
