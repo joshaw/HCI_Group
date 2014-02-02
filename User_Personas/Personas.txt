@@ -1,0 +1,34 @@
+﻿Sections
+        Photo  [suggestion: crop the dimensions to match the ratio of a passport photo ie. Height:width is ~1.29:1]
+        Name
+        Occupation
+        Age
+        Description
+        Main goals
+        Scenarios
+        Pain points(?)
+
+
+See persona scales for time/location etc constraints
+
+
+Elderly Person - Andy
+        Physical impairment - affects coordination using phone itself
+        Requires disabled access to facility
+        Would prefer concessions/discounts + locations with only other elderly people?
+
+
+Working - Rebecca
+        Time constraint
+        Will play any sport, some preferences
+
+
+Student - Aasima
+        Sport/location constraint
+        Looking for discounts?
+
+
+Young person - Josh
+        Location/time constraints
+        Colour blind?
+        Mum might have some involvment
