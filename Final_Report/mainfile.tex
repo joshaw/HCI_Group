@@ -1,6 +1,7 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
 
+\errorcontextlines=0
 \documentclass[a4paper]{article}%                                        use larger type; default would be 10pt
 % \documentclass[a4paper]{article}%                                                 use larger type; default would be 10pt
 \usepackage[utf8]{inputenc}%                                                      set input encoding (not needed with XeLaTeX)
@@ -25,12 +26,13 @@
 \usepackage[font=small,labelfont=bf,textfont=it]{caption}%                        stylize captions
 \usepackage[pdftex]{graphicx}%                                                    support the \includegraphics command and options
 \usepackage{booktabs}%                                                            for much better looking tables
-\usepackage{chngpage}%                                                            to change margins on specific pages
+\usepackage{changepage}%                                                            to change margins on specific pages
 \usepackage{array}%                                                               for better arrays (eg matrices) in maths
 \usepackage{enumitem}
 %\usepackage{paralist}%                                                            very flexible & customisable lists (eg. enumerate/itemize, etc.)
 \usepackage{verbatim}%                                                            adds environment for commenting out blocks of text & for better verbatim
 %\usepackage{subfig}%                                                              make it possible to include more than one captioned figure/table in a single float
+\usepackage{tabularx}
 \usepackage{subcaption}
 \usepackage{mathtools}%                                                           for math environments like align
 \usepackage{verbatim}%                                                            for including text as appears, verbatim
@@ -57,6 +59,8 @@
     colorlinks=false] {hyperref}%                                                 for links in pdf file, no colors
 \hypersetup{pdftitle={Human Computer Interaction},
     pdfauthor={}}%    set name of document and author here
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 %%% END Article customizations
 
@@ -86,11 +90,14 @@
 \section{User Personas}
 \label{sec:user_personas}
 
-\begin{adjustwidth}{}{12em}
+\input{../User_Personas/PersonasIntro.tex}
+
+\begin{adjustwidth*}{}{12em}
 	\input{../User_Personas/Elderly.tex}
-	\input{../User_Personas/Student.tex}
 	\input{../User_Personas/Working.tex}
-\end{adjustwidth}
+	\input{../User_Personas/Student.tex}
+	\input{../User_Personas/Child.tex}
+\end{adjustwidth*}
 
 % section user_personas (end)
 
