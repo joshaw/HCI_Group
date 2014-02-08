@@ -31,4 +31,15 @@ Student - Aasima
 Young person - Josh
         Location/time constraints
         Colour blind?
-        Mum might have some involvment
+        Mum might have some involvement
+
+
+
+
+Introduction to Personnas
+
+
+- We’ve covered people from a wide range of ages, occupations and technical abilities, lifestyles
+- Want to cover all different requirements/restrictions - accessibility/disability
+- People who might actually use the application
+- Allows emphasis to be placed on elements when developing product
