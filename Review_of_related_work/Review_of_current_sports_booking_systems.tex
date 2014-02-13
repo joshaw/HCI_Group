@@ -26,17 +26,21 @@ then selects an activity and is shown a timetable indicating at what time this
 activity is available. The activity can then be booked directly on the website.
 \begin{figure}[htbp]
 	\centering
-	\begin{subfigure}[b]{0.4\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/UoBSearch.png}
-		\caption{Search form}\label{fig:UoBSearch}
-	\end{subfigure}%
+	\checkoddpage%
+	\edef\side{\ifoddpage l\else r\fi}%
+	\makebox[\textwidth][\side]{%
+		\begin{subfigure}[b]{0.7\textwidth}
+			\includegraphics[width=\textwidth]{img/relatedReviews/UoBSearch.png}
+			\caption{Search form}\label{fig:UoBSearch}
+		\end{subfigure}%
+		\quad
+		\begin{subfigure}[b]{0.7\textwidth}
+			\includegraphics[width=\textwidth]{img/relatedReviews/UoBResults.png}
+			\caption{List of results}\label{fig:UoBResults}
+		\end{subfigure}
+	}
 	\qquad
-	\begin{subfigure}[b]{0.4\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/UoBResults.png}
-		\caption{List of results}\label{fig:UoBResults}
-	\end{subfigure}
-	\qquad
-	\begin{subfigure}[b]{0.7\textwidth}
+	\begin{subfigure}[b]{\textwidth}
 		\includegraphics[width=\textwidth]{img/relatedReviews/UoBTimetable.png}
 		\caption{Timetable of available bookings}\label{fig:UoBTimetable}
 	\end{subfigure}
@@ -79,20 +83,21 @@ activity is available. The activity can then be booked directly on the website.
 		is unlikely to have a court preference and most likely just wants to
 		know at what times they can play badminton; this system offers no quick
 		and easy way to do this.
+		\marginFig{img/relatedReviews/UoBTimetableDD}{Display when the 18:00 two hour slot is chosen. However, only one of two hours following 18:00 is available.}{fig:UoBTimetableDD}
 	\item The timetable results groups times into two hour slots but often each
 		booking slot is one hour long. It will show `available' for a two hour
 		slot when at least one of those two hours is available. Therefore it is
 		impossible to know if the exact hour a user wants to play is available
 		without selecting the containing two hour slot as shown in
 		figure~\ref{fig:UoBTimetableDD}.
-		\begin{figure}
-			\begin{center}
-				\includegraphics[width=0.4\textwidth]{img/relatedReviews/UoBTimetableDD}
-			\end{center}
-			\caption{Display when the 18:00 two hour slot is chosen. However,
-				only one of two hours following 18:00 is available.
-			}\label{fig:UoBTimetableDD}
-		\end{figure}
+		% \begin{figure}
+		% 	\begin{center}
+		% 		\includegraphics[width=0.4\textwidth]{img/relatedReviews/UoBTimetableDD}
+		% 	\end{center}
+		% 	\caption{Display when the 18:00 two hour slot is chosen. However,
+		% 		only one of two hours following 18:00 is available.
+		% 	}\label{fig:UoBTimetableDD}
+		% \end{figure}
 
 	\item There is no indication of price until you select a booking slot for a
 		particular sport at a particular time.
@@ -107,22 +112,26 @@ website\cite{AquaterraLeisure} where users are able to book at each of these
 facilities. The booking home page shown in figure~\ref{fig:AquaterraHome}
 prompts a user to select which of the locations they would like to make a
 booking at.
-\begin{figure}[htbp]
-	\centering
-	\begin{subfigure}[b]{0.3\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/AquaterraHome.png}
-		\caption{Aquaterra booking homepage}\label{fig:AquaterraHome}
-	\end{subfigure}
-	\qquad
-	\begin{subfigure}[b]{0.3\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/AquaterraSobellHome.png}
-		\caption{Facilities available at Sobell Leisure Centre.
-		}\label{fig:AquaterraSobellHome}
-	\end{subfigure}
-	\qquad
-	\caption{The booking interface for Aquaterra Leisure Centres.
-	}\label{fig:AquaterraHomeMain}
-\end{figure}
+% \begin{figure}[htbp]
+% 	\centering
+% 	\begin{subfigure}[b]{0.3\textwidth}
+% 		\includegraphics[width=\textwidth]{img/relatedReviews/AquaterraHome.png}
+% 		\caption{Aquaterra booking homepage}\label{fig:AquaterraHome}
+% 	\end{subfigure}
+% 	\qquad
+% 	\begin{subfigure}[b]{0.3\textwidth}
+% 		\includegraphics[width=\textwidth]{img/relatedReviews/AquaterraSobellHome.png}
+% 		\caption{Facilities available at Sobell Leisure Centre.
+% 		}\label{fig:AquaterraSobellHome}
+% 	\end{subfigure}
+% 	\qquad
+% 	\caption{The booking interface for Aquaterra Leisure Centres.
+% 	}\label{fig:AquaterraHomeMain}
+% \end{figure}
+\marginFig[0.7]{img/relatedReviews/AquaterraHome.png}{Aquaterra booking
+homepage}{fig:AquaterraHome}
+\marginFig[0.7]{img/relatedReviews/AquaterraSobellHome.png}{Facilities
+available at Sobell Leisure Centre.}{fig:AquaterraSobellHome}
 
 The interface for each of the locations varies slightly, but each will
 generally show a list of available activities at that location that can be
@@ -132,18 +141,21 @@ booking can then be made directly on the website after choosing a preferred
 court.
 \begin{figure}[htbp]
 	\centering
-	\begin{subfigure}[b]{0.4\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/AquaterraSobellBadminton.png}
-		\caption{Beginning of timetable showing available badminton
-		slots}\label{fig:AquaterraSobellBadminton}
-	\end{subfigure}
-	\qquad
-	\begin{subfigure}[b]{0.4\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/AquaterraSobellConfirm.png}
-		\caption{Confirmation page for a booking slot showing price and choice
-		of courts available}\label{fig:AquaterraSobellConfirm}
-	\end{subfigure}
-	\qquad
+	\checkoddpage%
+	\edef\side{\ifoddpage l\else r\fi}%
+	\makebox[\textwidth][\side]{%
+		\begin{subfigure}[b]{0.48\textwidth}
+			\includegraphics[width=\textwidth]{img/relatedReviews/AquaterraSobellBadminton.png}
+			\caption{Beginning of timetable showing available badminton
+			slots}\label{fig:AquaterraSobellBadminton}
+		\end{subfigure}
+		\quad
+		\begin{subfigure}[b]{0.48\textwidth}
+			\includegraphics[width=\textwidth]{img/relatedReviews/AquaterraSobellConfirm.png}
+			\caption{Confirmation page for a booking slot showing price and choice
+			of courts available}\label{fig:AquaterraSobellConfirm}
+		\end{subfigure}
+	}
 	\caption{The booking interface for badminton at Sobell Leisure
 	Centre}\label{fig:AquaterraSobellBadmintonMain}
 \end{figure}
@@ -189,23 +201,31 @@ partners to play with, as well as tournaments to play in and courts to play at.
 The court search feature in figure~\ref{fig:LondonTennisSearch} allows a user
 to search for a court anywhere in London including options to search by cost of
 playing, location and type of court.
-\begin{figure}[htbp]
+\begin{figure}[ht]
 	\centering
-	\begin{subfigure}[b]{0.6\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/LondonTennisSearch.png}
-		\caption{The search form for looking for a tennis court.
-		}\label{fig:LondonTennisSearch}
-	\end{subfigure}%
-	\qquad
-	\begin{subfigure}[b]{0.35\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/LondonTennisPredict.png}
-		\caption{Drop down to predict input when typing a name of a court.
-		}\label{fig:LondonTennisPredict}
-	\end{subfigure}
-	\qquad
-	\caption{The search form for London Tennis.
-	}\label{fig:LondonTennisSearchMain}
+	\includegraphics[width=0.7\textwidth]{img/relatedReviews/LondonTennisSearch.png}
+	\caption{The search form for looking for a tennis court.}\label{fig:LondonTennisSearch}
 \end{figure}
+
+% \begin{figure}[htbp]
+% 	\centering
+% 	\begin{subfigure}[b]{0.6\textwidth}
+% 		\includegraphics[width=\textwidth]{img/relatedReviews/LondonTennisSearch.png}
+% 		\caption{The search form for looking for a tennis court.
+% 		}\label{fig:LondonTennisSearch}
+% 	\end{subfigure}%
+% 	\qquad
+% 	\begin{subfigure}[b]{0.35\textwidth}
+% 		\includegraphics[width=\textwidth]{img/relatedReviews/LondonTennisPredict.png}
+% 		\caption{Drop down to predict input when typing a name of a court.
+% 		}\label{fig:LondonTennisPredict}
+% 	\end{subfigure}
+% 	\qquad
+% 	\caption{The search form for London Tennis.
+% 	}\label{fig:LondonTennisSearchMain}
+% \end{figure}
+\marginFig{img/relatedReviews/LondonTennisPredict.png}{Drop down to predict
+input when typing a name of a court.}{fig:LondonTennisPredict}
 
 There is also the option to select courts from a map, as shown in
 figure~\ref{fig:LondonTennisMap}. Users can filter out courts which are free or

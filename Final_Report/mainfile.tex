@@ -1,7 +1,7 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
 
-\documentclass[a4paper,10pt, draft, twoside]{extarticle}
+\documentclass[a4paper,10pt,draft]{article}
 \usepackage[utf8]{inputenc}
 
 %%% PAGE DIMENSIONS ------------------------------------------------------------
@@ -22,45 +22,54 @@
 
 %%% PACKAGES -------------------------------------------------------------------
 %\usepackage{morefloats}
-\usepackage[font=small,labelfont=bf,textfont=it]{caption}
+\usepackage[hypcap=false,font=small,labelfont=bf,textfont=it]{caption}
 \usepackage[pdftex]{graphicx}
 \usepackage{booktabs}
 \usepackage{changepage}
 \usepackage{array}
 \usepackage{enumitem}
 %\usepackage{paralist}
-\usepackage{verbatim}
+% \usepackage{verbatim}
 %\usepackage{subfig}
 \usepackage{longtable}
 \usepackage{tabu}
 \usepackage{subcaption}
-\usepackage{mathtools}
+% \usepackage{mathtools}
 \usepackage{verbatim}
 \usepackage{listings}
 \usepackage{color}
 %\usepackage{overpic}
 %\usepackage{multirow}
-\usepackage{rotating}
+% \usepackage{rotating}
 \usepackage{marginfix}
 \usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\microtypecontext{spacing=nonfrench}
 
 %% BIBIOGRAPHY ------------------------------------------------------------------
 \usepackage{cite}
 
 %%% ToC (table of contents) APPEARANCE -----------------------------------------
-\usepackage[nottoc,notlof,notlot]{tocbibind}
+% \usepackage[nottoc,notlof,notlot]{tocbibind}
 \usepackage[titles,subfigure]{tocloft}
-\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
-\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape}
-\setcounter{tocdepth}{2}
+% \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+% \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape}
+% \setcounter{tocdepth}{2}
 
 %%% PDF LINKS AND STYLE --------------------------------------------------------
-\usepackage[unicode=true,
-	bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,
-	bookmarksopenlevel=2, breaklinks=false,pdfborder={0 0 0},backref=false,
-	colorlinks=false] {hyperref}
-\hypersetup{pdftitle={Human Computer Interaction},
-	pdfauthor={}}
+% \usepackage[unicode=true,
+% 	bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,
+% 	bookmarksopenlevel=2, breaklinks=false,pdfborder={0 0 0},backref=false,
+% 	colorlinks=false]{hyperref}
+\usepackage[bookmarks=true]{hyperref}
+\hypersetup{%
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+% \hypersetup{pdftitle={Human Computer Interaction},
+% 	pdfauthor={}}
 
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
@@ -79,8 +88,15 @@
 %*******************************************************************************
 
 \begin{document}
+
+\newgeometry{left=3cm}
+
 \input{titlepage.tex}
-\newpage
+
+\restoregeometry%
+
+\newpage\null\thispagestyle{empty}\newpage
+\setcounter{page}{0}
 \tableofcontents
 \addcontentsline{toc}{section}{Contents}
 \newpage
