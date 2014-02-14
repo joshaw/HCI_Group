@@ -1,0 +1,56 @@
+﻿Josh
+Introduction to prototypes + how we we will evaluate them
+        Paragraph about Neilsen’s heuristics?
+* Visibility of system status
+* Match between system and the real world
+* User control and freedom
+* Consistency and standards
+* Error prevention
+* Recognition rather than recall
+* Flexibility and efficiency of use
+* Aesthetic and minimalist design
+* Help users recognize, diagnose, and recover from errors
+* Help and documentation
+
+
+Final conclusion on prototypes section?
+
+
+----------------------------------------------
+PROTOTYPES
+Aspect ratio 5:3
+
+
+Presentation
+        Annotations
+
+
+Evaluation of each prototype against heuristics and user personas/scenarios
+Heuristics: http://www.nngroup.com/articles/ten-usability-heuristics/
+
+
+-----------------------------------------------
+Rebecca
+Hierarchical
+        Big buttons
+        Clear options
+        More precise results
+        Input to help find offers
+        Booking screen
+        History
+
+
+Andrew
+Content-driven
+        Map
+        Interactive filter options
+        Booking screen
+
+
+Aasima
+Flat
+        Results as a list
+                - similar to thetrainline/redspottedhankey?
+        Input to help when to find offers
+        Booking screen
+        History

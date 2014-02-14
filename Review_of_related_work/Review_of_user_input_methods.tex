@@ -19,22 +19,26 @@ become confusing or impossible to read. For example, in
 figure~\ref{fig:GoogleCalendarTimetable}\cite{GoogleCalendar}, despite a single
 hour being a common appointment length, the text for these slots is hidden
 entirely.
-\begin{figure}[ht]
-	\centering
-	\begin{subfigure}[b]{0.25\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/GoogleCalendarTimetable.png}
-		\caption{Google Calendar}\label{fig:GoogleCalendarTimetable}
-	\end{subfigure}%
-	\qquad
-	\begin{subfigure}[b]{0.25\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/RedSpottedHankyTicketSelection}
-		\caption{RedSpottedHanky}\label{fig:RedSpottedHankyTicketSelection}
-	\end{subfigure}
-	\caption{When too much information is displayed on a screen, it can be
-		hard to read and interpret, whereas condensing the information and
-		splitting it so that only currently appropriate information is shown
-	makes it much easier to understand. }\label{fig:timetables}
-\end{figure}
+% \begin{figure}[htbp]
+% 	\centering
+% 	\begin{subfigure}[b]{0.25\textwidth}
+% 		\includegraphics[width=\textwidth]{img/relatedReviews/GoogleCalendarTimetable.png}
+% 		\caption{Google Calendar}\label{fig:GoogleCalendarTimetable}
+% 	\end{subfigure}%
+% 	\qquad
+% 	\begin{subfigure}[b]{0.25\textwidth}
+% 		\includegraphics[width=\textwidth]{img/relatedReviews/RedSpottedHankyTicketSelection}
+% 		\caption{RedSpottedHanky}\label{fig:RedSpottedHankyTicketSelection}
+% 	\end{subfigure}
+% 	\caption{When too much information is displayed on a screen, it can be
+% 		hard to read and interpret, whereas condensing the information and
+% 		splitting it so that only currently appropriate information is shown
+% 	makes it much easier to understand. }\label{fig:timetables}
+% \end{figure}
+\marginFig[0.7]{img/relatedReviews/GoogleCalendarTimetable.png}{Google
+Calendar's cramped calendar.}{fig:GoogleCalendarTimetable}
+\marginFig[0.7]{img/relatedReviews/RedSpottedHankyTicketSelection}{RedSpottedHanky
+displays dates more clearly.}{fig:RedSpottedHankyTicketSelection}
 
 A common way to improve the readability of theses complex structures, which
 often contain a large quantity of data, is to have graded selection of that
@@ -73,19 +77,19 @@ and~\ref{fig:GoogleCalendarDateTime2} on the left are examples from Google
 Calendar which shows how the process can be made much more intuitive, simple
 and fast. Through the use of separate screens with large and clear selection,
 this selection is much easier to navigate than the scrolling method used above.
-\begin{figure}[ht]
+\begin{figure}[htbp]
 	\centering
-	\begin{subfigure}[b]{0.25\textwidth}
+	\begin{subfigure}[b]{0.28\textwidth}
 		\includegraphics[width=\textwidth]{img/relatedReviews/RedSpottedHankyDateTime}
 		\caption{RedSpottedHanky}\label{fig:RedSpottedHankyDateTime}
 	\end{subfigure}%
 	\qquad
-	\begin{subfigure}[b]{0.25\textwidth}
+	\begin{subfigure}[b]{0.29\textwidth}
 		\includegraphics[width=\textwidth]{img/relatedReviews/GoogleCalendarDateTime}
 		\caption{Google Calendar}\label{fig:GoogleCalendarDateTime}
 	\end{subfigure}
 	\qquad
-	\begin{subfigure}[b]{0.25\textwidth}
+	\begin{subfigure}[b]{0.29\textwidth}
 		\includegraphics[width=\textwidth]{img/relatedReviews/GoogleCalendarDateTime2}
 		\caption{Google Calendar}\label{fig:GoogleCalendarDateTime2}
 	\end{subfigure}
@@ -96,20 +100,22 @@ this selection is much easier to navigate than the scrolling method used above.
 	separate screens. }\label{fig:date_time_selection}
 \end{figure}
 
+% \marginFig{img/relatedReviews/iOSDateTime}{RedSpottedHanky}{fig:iOSDateTime}
 A combination of both of these is used in the stock iOS, shown in
 figure~\ref{fig:iOSDateTime}\cite{iOSDateTime} where a much easier to navigate
 scrolling mechanism is used. Though this can still cause the user to spend more
 time selecting the correct number, the fact that the used can ``flick scroll''
 though the numbers means reaching a value that is far from the currently
 selected one is much quicker than the RedSpottedHanky.com application.
-\begin{figure}[ht]
+% \marginFig{img/relatedReviews/iOS7DateTime}{Google Calendar}{fig:iOS7DateTime}
+\begin{figure}[htbp]
 	\centering
-	\begin{subfigure}[b]{0.25\textwidth}
+	\begin{subfigure}[b]{0.3\textwidth}
 		\includegraphics[width=\textwidth]{img/relatedReviews/iOSDateTime}
 		\caption{RedSpottedHanky}
 	\end{subfigure}%
 	\qquad
-	\begin{subfigure}[b]{0.35\textwidth}
+	\begin{subfigure}[b]{0.4\textwidth}
 		\includegraphics[width=\textwidth]{img/relatedReviews/iOS7DateTime}
 		\caption{Google Calendar}
 	\end{subfigure}
@@ -123,6 +129,9 @@ selected one is much quicker than the RedSpottedHanky.com application.
 \subsubsection{Forms}
 \label{ssub:forms}
 
+\marginFig[0.7]{img/relatedReviews/TescoFormInput}{Large, easy to access text
+entry}{fig:TescoFormInput}
+
 When entering information that is not limited to a small set of possible
 values, such as a name, location or arbitrary number, a form must be used to
 accept the user input. Since touch screens rely of the user being able to
@@ -132,6 +141,9 @@ allow this movement easily.
 Figure~\ref{fig:TescoFormInput} show a simple form with two input boxes. Each
 has a clear border around it so the target for interaction is easier to select.
 
+\marginFig[0.7]{img/relatedReviews/PaintCalculatorCrowded}{Crowded interfaces
+make entry more difficult.}{fig:PaintCalculatorCrowded}
+
 An important consideration that has been made here is to specify that, for the
 second set of text input, the data is strictly limited to digits. For this
 reason, the keyboard switches from a general purpose ``qwerty'' keyboard to a
@@ -139,19 +151,19 @@ purely numerical version. Again, this assists the user, both by indicating that
 only the provided digits are acceptable, and making the input of those digits
 easier (often the numbers on a touch screen keyboard are only accessible by
 switching modes).
-\begin{figure}[ht]
-	\centering
-	\begin{subfigure}[b]{0.2\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/TescoFormInput}
-		\caption{Large, easy to access text entry}\label{fig:TescoFormInput}
-	\end{subfigure}%
-	\qquad
-	\begin{subfigure}[b]{0.25\textwidth}
-		\includegraphics[width=\textwidth]{img/relatedReviews/PaintCalculatorCrowded}
-		\caption{Crowded interfaces make entry more difficult.}
-	\end{subfigure}
-	\caption{}\label{fig:PaintCalculatorCrowded}
-\end{figure}
+% \begin{figure}[htbp]
+% 	\centering
+% 	\begin{subfigure}[b]{0.2\textwidth}
+% 		\includegraphics[width=\textwidth]{img/relatedReviews/TescoFormInput}
+% 		\caption{Large, easy to access text entry}\label{fig:TescoFormInput}
+% 	\end{subfigure}%
+% 	\qquad
+% 	\begin{subfigure}[b]{0.25\textwidth}
+% 		\includegraphics[width=\textwidth]{img/relatedReviews/PaintCalculatorCrowded}
+% 		\caption{Crowded interfaces make entry more difficult.}
+% 	\end{subfigure}
+% 	\caption{}\label{fig:PaintCalculatorCrowded}
+% \end{figure}
 
 By contrast, the interface in figure~\ref{fig:PaintCalculatorCrowded} is overly
 crowded with too many small buttons squashed together. This could cause the

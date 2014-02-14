@@ -1,16 +1,17 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
 
-\documentclass[a4paper]{article}
+\documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
 
 %%% PAGE DIMENSIONS ------------------------------------------------------------
-\usepackage[marginpar=5cm, marginparsep=-3.5cm, margin=1.5in]{geometry}
+% \usepackage[marginpar=5cm,  margin=1.5in]{geometry}
+\usepackage[marginpar=5cm, marginparsep=1cm, top=2in, bottom=1.5in, left=3cm, right=7cm]{geometry}
 \usepackage[parfill]{parskip}
 
 %%% HEADERS & FOOTERS ----------------------------------------------------------
-\usepackage{fancyhdr}
-\pagestyle{fancy}
+% \usepackage{fancyhdr}
+\pagestyle{headings}
 % \renewcommand{\headrulewidth}{0pt}
 % \lhead{}\chead{}\rhead{}
 % \lfoot{}\cfoot{page \thepage}\rfoot{}
@@ -21,44 +22,64 @@
 
 %%% PACKAGES -------------------------------------------------------------------
 %\usepackage{morefloats}
-\usepackage[font=small,labelfont=bf,textfont=it]{caption}
+\usepackage[hypcap=false,font=small,labelfont=bf,textfont=it]{caption}
 \usepackage[pdftex]{graphicx}
 \usepackage{booktabs}
 \usepackage{changepage}
 \usepackage{array}
 \usepackage{enumitem}
 %\usepackage{paralist}
-\usepackage{verbatim}
+% \usepackage{verbatim}
 %\usepackage{subfig}
-\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{tabu}
 \usepackage{subcaption}
-\usepackage{mathtools}
+% \usepackage{mathtools}
 \usepackage{verbatim}
 \usepackage{listings}
 \usepackage{color}
 %\usepackage{overpic}
 %\usepackage{multirow}
-\usepackage{rotating}
+% \usepackage{rotating}
+\usepackage{marginfix}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\microtypecontext{spacing=nonfrench}
 
-%% BIBIOGRAPHY ------------------------------------------------------------------
+%% BIBIOGRAPHY -----------------------------------------------------------------
 \usepackage{cite}
 
 %%% ToC (table of contents) APPEARANCE -----------------------------------------
-\usepackage[nottoc,notlof,notlot]{tocbibind}
+% \usepackage[nottoc,notlof,notlot]{tocbibind}
 \usepackage[titles,subfigure]{tocloft}
-\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
-\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape}
-\setcounter{tocdepth}{2}
+% \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+% \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape}
+% \setcounter{tocdepth}{2}
 
 %%% PDF LINKS AND STYLE --------------------------------------------------------
-\usepackage[unicode=true,
-    bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,
-    bookmarksopenlevel=2, breaklinks=false,pdfborder={0 0 0},backref=false,
-    colorlinks=false] {hyperref}
-\hypersetup{pdftitle={Human Computer Interaction},
-    pdfauthor={}}
+% \usepackage[unicode=true,
+% 	bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,
+% 	bookmarksopenlevel=2, breaklinks=false,pdfborder={0 0 0},backref=false,
+% 	colorlinks=false]{hyperref}
+\usepackage[bookmarks=true]{hyperref}
+\hypersetup{%
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+% \hypersetup{pdftitle={Human Computer Interaction},
+% 	pdfauthor={}}
 
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\newcommand\marginFig[4][1]{%
+	\marginpar{%
+		\centering
+		\includegraphics[width=#1\marginparwidth]{#2}
+		\captionof{figure}{#3}\label{#4}
+	}
+}
 
 %%% END Article customizations
 
@@ -67,10 +88,17 @@
 %*******************************************************************************
 
 \begin{document}
+
+\newgeometry{left=3cm}
+
 \input{titlepage.tex}
-\newpage
+
+
+\newpage\null\thispagestyle{empty}\newpage
+\setcounter{page}{0}
 \tableofcontents
 \addcontentsline{toc}{section}{Contents}
+\restoregeometry%
 \newpage
 
 \section{Review of Related Work}
@@ -90,15 +118,27 @@
 
 \input{../User_Personas/PersonasIntro.tex}
 
-\begin{adjustwidth*}{}{12em}
+% \begin{adjustwidth*}{}{12em}
 	\input{../User_Personas/Elderly.tex}
 	\input{../User_Personas/Working.tex}
 	\input{../User_Personas/Student.tex}
 	\input{../User_Personas/Child.tex}
-\end{adjustwidth*}
+% \end{adjustwidth*}
 
 % section user_personas (end)
 
+\section{First Prototypes}
+\label{sec:first_prototypes}
+
+% \begin{adjustwidth}{}{12em}
+	% \vspace{-3em}
+	% \leavevmode
+	\input{../First_Prototypes/Pro1_ContentDriven.tex}
+% \end{adjustwidth}
+
+% section first_prototypes (end)
+
+\newgeometry{left=3cm}
 \bibliographystyle{plain}
 \bibliography{references}
 \end{document}
