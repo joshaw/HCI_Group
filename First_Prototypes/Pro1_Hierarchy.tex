@@ -1,0 +1,177 @@
+First Generation Prototype 2
+Tools: balsamiq
+Rationale
+This prototype is a hierarchical design displaying each screen as a series of steps which the user must progress through before searching. This prototype also focuses on a very simple, easy to use interface.
+Choose all criteria before searching
+Home Screen
+The home screen offers a choice of three menus
+
+Figure1- home screen
+
+1.       Make a booking – takes users to the hierarchy of search screens to enter their criteria
+2.       Change a booking – takes the user to a screen which allows them to change their criteria if alternative results permit it
+3.       Cancel booking – takes the user to a screen of their current bookings and the user can select which booking they would like to cancel. Whether a refund is possible would depend on the sport centre
+
+Search screen1
+On selecting ‘Make a booking’, the user will be directed to the initial search screen which will be the first step in their search
+
+Figure2 – first search screen
+
+1.       The help button takes the user to a guide on how to complete the current page along with FAQ’s
+2.       The progress bar shows the user how far along in the search process they are
+3.       The user can choose which sport they would like to play from a drop down menu. The drop down menu shows recent search results at the top, then list all available sports in alphabetical order
+4.       The user must press on the calendar icon which will present them with a calendar to select which date they would like to play
+5.       The time is chosen by selecting the hour and minutes from drop down bars
+6.       The user can select how long they would like to play for, chosen from a drop down bar with half hour intervals
+7.       Takes the user to the next step in the search process
+
+Search screen2
+The next screen focuses on location.
+
+Figure 3 – second search screen
+
+1.       The search box allows the user to specify their location by either town, city or postcode. When the user begins to type a location, the system will suggest locations based on what they have already typed
+2.       The user can use a horizontal slider to specify how far they are willing to travel to play the sport
+3.       If the user requires disables access they can tick the checkbox and the results will only show sports centres which are wheelchair accessible
+
+Search Screen3
+The user is then brought to the final search screen where they may be able to get discounts
+
+Figure4 – search screen3
+
+1.       Numeric stepper to specify how many people the booking is for
+2.       The user may be eligible for discounts if they are a child, student or pensioner. They can tick the suitable checkboxes if they fall into any of these categories
+3.       If the user has a strict budget, they can choose to only see results which do not exceed a  particular price
+4.       Pressing the search button takes the user to a screen displaying the results of the search
+Results Screen
+Screen showing the results of the search
+
+Figure5 – results screen
+
+1.       The user can sort the results by distance, price or time
+2.       If the results are not suitable, the user may wish to change their search criteria, the ‘amend search’ button will take them back to the first search screen where they can alter their original preferences
+3.       Each result informs the user of the time, date, venue name, distance from the venue and the price. The price shows the total price for all people. The user can scroll down the page to view all matching results
+4.       Pressing the buttons displaying the price will take the user to a more detailed description of the booking and a link to an external pay site or the website of that sports facility to pay for the booking.
+
+\newgeometry{left=3cm}
+\subsubsection{Evaluation}
+
+\begin{table}
+\begin{center}
+	\renewcommand{\arraystretch}{2}
+	\begin{longtable}{p{0.3\textwidth} c p{0.6\textwidth}}
+		\toprule
+		\textbf{Criteria} & \textbf{Rating} & \textbf{Comment}\\
+		\midrule
+		Visibility of system status &  & Each screen shows the user their
+		progress in the search process \\
+
+		Match between system and the real world &  & Each field  \\
+
+		User control and freedom & $-$ & The hierarchical nature of the system
+		prevents the user from switching screens easily. If they choose to go
+		back they will lose the information they have already typed on the
+		screen they left. Freedom is also restricted as the user is required to
+		fill all fields. For example they must pick a particular sport at a
+		particular time \\
+
+		Consistency and standards &  &  \\
+
+		Error prevention & + & Due to the large buttons and very simple
+		interface, there is very little chance of user error. Although the drop
+		down menus could get a little fiddly. If the user does accidentally
+		book the wrong option, they may have the opportunity to change or
+		cancel this booking \\
+
+		Recognition rather than re-call &  &  \\
+
+		Flexibility and efficiency use & 0 & Lacks efficiency due to the fact
+		that the user must progress through all search screens filling in all
+		fields before they can search \\
+
+		Aesthetic and minimalist de-sign & + & The design is very simple so as
+		not to cause any confusion to the user \\
+
+		Help users recognize, diag-nose, and recover from errors & + & If the
+		user tries to move to the next screen having not filled a field or
+		filled it incorrectly,  they will be shown a descriptive error message
+		in red above that field \\
+
+		Help and documentation & + & The help button displayed on every screen
+		takes the user to a guide on how to complete the current page along
+		with FAQ?s \\
+		\end{longtable}
+	\end{center}
+\end{table}
+
+\begin{center}
+	\renewcommand{\arraystretch}{2}
+	\begin{longtable}{p{0.12\textwidth} p{0.3\textwidth} c p{0.45\textwidth}}
+		\toprule
+		\textbf{User} & \textbf{Scenario} & \textbf{Rating} & \textbf{Comment}\\
+		\midrule
+		\textbf{Elderly} & Searching for new sports in the area and notifying
+		his wife of the booking. & $-$ & Howard may find using the drop down
+		menus difficult with his osteoarthritis. There is no feature to notify
+		people of the booking \\
+
+		& Racquet sport with 4 friends on Friday & 0 & Can select four people
+		to play using drop down menu. Would have to specify which racquet sport
+		he wishes to play. No bulk book feature \\
+
+		& Swimming nearby with knee pain & + & If Howard does not wish to
+		travel far he can either filter the results by distance or specify a
+		maximum distance he is willing to travel (search screen2). If Howards
+		knee pain is particularly bad he may wish to swim somewhere which
+		doesn?t require climbing any stairs. He can do this by ticking the
+		wheelchair accessible checkbox \\
+
+		\midrule
+		\textbf{Working} & Team sport on Friday including screen
+		sharing with friends & $-$ & The app would not support this scenario as
+		there is no option to search for just team sports. There is also no
+		current feature to support screen sharing but this could be
+		incorporated into the final design \\
+
+		& Change/cancel booking at late notice & 0 & Janet has this option on
+		the home screen. Although the app cannot guarantee the venue allows
+		cancellations \\
+
+		& Outdoor sport early on Saturday & 0 & Useful as Janet can specify a
+		time. But again, there is no flexibility in choosing a sport \\
+
+		\midrule
+		\textbf{Student} & Tennis court at specific time & + & This
+		scenario is tailored this prototypes design. Jenny can specify that she
+		would like to play tennis at a particular time on a particular day and
+		how long she would like to play for \\
+
+		& Weekday evening session must be on clay & 0 & This could be something
+		to incorporate on the screen showing the booking in more detail, along
+		with other information such as court number \\
+
+		& Weekly practice with friend with reminders & $-$ & There is no
+		notification feature with this prototype. The regular weekly booking
+		feature could also be something we incorporate in the screen showing
+		more detail about the booking \\
+
+		\midrule
+		\textbf{Child} & Outdoor sport close to home or on a bus route with
+		coach & $-$ & No feature showing any transport routes. Joe would also
+		have to specify which outdoor sport he is interested in playing \\
+
+		& Booking several squash courts for after school tournament & $-$ & With
+		the current design, Joe would have to use the number of players field
+		(4 people = 1 court) to portray how many courts he needs. He can
+		specify how long they need the courts based on how long they think
+		tournament will last. However he would need to choose a particular day
+		\\
+
+		& Looking for high quality tennis court & $-$ & There is currently no way
+		of finding the quality of the sport facilities. Pete can however, use
+		the sliders to increase the maximum distance and price they are willing
+		to pay \\
+		\bottomrule
+	\end{longtable}
+\end{center}
+\restoregeometry%
