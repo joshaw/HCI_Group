@@ -10,15 +10,27 @@ search.
 
 \paragraph{Home Map}
 
-\marginFig{img/firstPrototypes/Pro1Home}{The home map screen}{fig:Pro1Home}
+% \marginFig{img/firstPrototypes/Pro1Home}{The home map screen}{fig:Pro1Home}
+\marginpar{%
+	\begin{overpic}[width=\marginparwidth]
+		{img/firstPrototypes/Pro1Home}
+		\put(-7,94){\framebox{1}}
+		\put(62,70){\framebox{2}}
+		\put(3,22){\framebox{3}}
+		\put(46,23){\framebox{3}}
+		\put(62,92){\framebox{4}}
+		\put(5,45){\framebox{5}}
+	\end{overpic}
+	\captionof{figure}{The home map screen}\label{fig:Pro1Home}
+}
 On opening the application, the user is immediately shown this map home screen
 with the date and time set to the current time and the location centred on the
 user's location.
 \begin{enumerate}
-	\item The tab bar links to pages where the user can decide which sports and
-		dates to filter into the search. The location tab will prompt the user
-		to enter a new postcode to centre the map on or ask them if they would
-		like to reset to their current location.
+	\item\label{hometabs} The tab bar links to pages where the user can decide
+		which sports and dates to filter into the search. The location tab will
+		prompt the user to enter a new postcode to centre the map on or ask
+		them if they would like to reset to their current location.
 	\item Icons represent locations to play sport. Where a single sport is
 		available to play at a location, a picture for that sport is shown.
 		Where more than one sport is available, a plus sign is show to indicate
@@ -52,7 +64,17 @@ user's location.
 
 \paragraph{Sports filter}
 
-\marginFig{img/firstPrototypes/Pro1Sports}{Sports filter screen}{fig:Pro1Sports}
+% \marginFig{img/firstPrototypes/Pro1Sports}{Sports filter screen}{fig:Pro1Sports}
+\marginpar{%
+	\begin{overpic}[width=\marginparwidth]
+		{img/firstPrototypes/Pro1Sports}
+		\put(62,85){\framebox{1}}
+		\put(62,45){\framebox{2}}
+		\put(62,1){\framebox{3}}
+		\put(-7,94){\framebox{4}}
+	\end{overpic}
+	\captionof{figure}{Sports filter screen}\label{fig:Pro1Sports}
+}
 A page to filter which sports are shown on the map home page.
 
 \begin{enumerate}
@@ -67,7 +89,18 @@ A page to filter which sports are shown on the map home page.
 
 \paragraph{Dates filter}
 
-\marginFig{img/firstPrototypes/Pro1Dates}{Dates filter screen}{fig:Pro1Dates}
+% \marginFig{img/firstPrototypes/Pro1Dates}{Dates filter screen}{fig:Pro1Dates}
+\marginpar{%
+	\begin{overpic}[width=\marginparwidth]
+		{img/firstPrototypes/Pro1Dates}
+		\put(62,86){\framebox{1}}
+		\put(62,43){\framebox{2}}
+		\put(-7,73){\framebox{3}}
+		\put(62,1){\framebox{4}}
+		\put(-7,94){\framebox{4}}
+	\end{overpic}
+	\captionof{figure}{Dates filter screen}\label{fig:Pro1Dates}
+}
 A page to filter which dates are included in the search. Dates which are
 highlighted are included in the date navigation on the map home page. (no 4 on
 the home screen)
@@ -87,7 +120,17 @@ the home screen)
 
 \paragraph{Book now screen}
 
-\marginFig{img/firstPrototypes/Pro1Booking}{Book now screen}{fig:Pro1Booking}
+% \marginFig{img/firstPrototypes/Pro1Booking}{Book now screen}{fig:Pro1Booking}
+\marginpar{%
+	\begin{overpic}[width=\marginparwidth]
+		{img/firstPrototypes/Pro1Booking}
+		\put(42,77){\framebox{1}}
+		\put(-7,43){\framebox{2}}
+		\put(3,13){\framebox{3}}
+		\put(62,1){\framebox{4}}
+	\end{overpic}
+	\captionof{figure}{Book now screen}\label{fig:Pro1Booking}
+}
 This screen appears when a user selects a sports icon on the home page. The
 screen does not cover the whole of the previous page, allowing the user to
 still see the date of the booking and the weather prediction for that time. The
@@ -248,4 +291,3 @@ user can press the x to close this screen and return to the search.
 	\end{longtable}
 \end{center}
 \restoregeometry%
-
