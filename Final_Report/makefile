@@ -9,7 +9,7 @@ CHECKDIR=mkdir -p $(DIR)
 all:
 	$(CHECKDIR)
 	$(BUILDTEX)
-	$(BIBTEX) ${DIR}/$(PROJECT)
+	$(BIBTEX) ${DIR}/$(PROJECT) || true
 	$(BUILDTEX)
 	echo -e "\n\n\n"
 	$(BUILDTEX) | grep -i "warning" -A2
