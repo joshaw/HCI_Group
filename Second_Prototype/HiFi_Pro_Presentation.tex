@@ -25,8 +25,6 @@ Evaluation of balsamiq
 
 \subsection{Presentation}
 
-description of the prototype + pictures + annotations
-
 
 \paragraph{Home }
 
@@ -156,6 +154,8 @@ after defining any number of the four criteria.
 	\end{overpic} 	
 	\captionof{figure}{The sport selection screen}\label{fig:HiSport} 
 }
+
+The user can choose to search for as many sports at once as they wish. 
 \begin{enumerate}
 	\item Drop down to choose to display different groups of sport such as outdoor
 	      sports, indoor sports, teams sports and favourites which are defined
@@ -166,6 +166,8 @@ after defining any number of the four criteria.
 	\item Each sport toggles between selected and unselected when pressed.
 	\item Done button - this returns the user to the search page. This the same
 	      for all specific search criteria pages. (Figure~\ref{fig:HiSearch})
+	\item Help button - displays hovering annotations describing what each part
+	      of the page is for.
 \end{enumerate}
 
 \paragraph{Location Selection}
@@ -196,6 +198,8 @@ name.
 	      on public transport such as local buses and trains.
 	\item Checkboxes for including in the search only those locations which
 	      have disabled access and parking facilities.
+	\item Help button - displays hovering annotations describing what each part
+	      of the page is for.
 \end{enumerate}
 
 \paragraph{Date Selection}
@@ -218,6 +222,9 @@ search.
 	      that day are highlighted.
 	\item The user can either touch a date to highlight it or swipe across multiple
 	      dates to highlight many dates in one go.
+	\item Help button - displays hovering annotations describing what each part
+	      of the page is for including instructions on using swiping gestures
+	      to select multiple dates.
 \end{enumerate}
 
 \paragraph{Time Selection}
@@ -238,6 +245,9 @@ search.
 	      on or off, likewise for pm.
 	\item The user can either touch an hour to highlight it or swipe across
 	      multiple times times highlight many times at once.
+	\item Help button - displays hovering annotations describing what each part
+	      of the page is for including instructions on using swiping gestures
+	      to select multiple times.
 \end{enumerate}
 
 \paragraph{List Results}
@@ -277,17 +287,31 @@ page.
 	\captionof{figure}{The map results screen}\label{fig:HiListGroup} 
 }
 
+\begin{figure}[htbp] 	
+	\centering 	
+	\begin{subfigure}[b]{0.45\textwidth} 		
+		\includegraphics[width=\textwidth]{img/secondPrototype/map} 		
+		\caption{The map results screen}\label{fig:HiMap}
+	\end{subfigure}% 	
+	\qquad 	
+	\begin{subfigure}[b]{0.45\textwidth} 		
+		\includegraphics[width=\textwidth]{img/secondPrototype/indiv_result} 		
+		\caption{Screen for a booking slot}\label{fig:HiIndResult}
+	\end{subfigure} 	
+	\caption{}\label{fig:MapResult} 
+\end{figure}
+
 
 \paragraph{Map Results}
 
 (Figure~\ref{fig:HiMap})
 
-\marginpar{% 	
-	\begin{overpic}[width=\marginparwidth] 		
-		{img/secondPrototype/map} 	
-	\end{overpic} 	
-	\captionof{figure}{The map results screen}\label{fig:HiMap} 
-}
+%\marginpar{% 	
+%	\begin{overpic}[width=\marginparwidth] 		
+%		{img/secondPrototype/map} 	
+%	\end{overpic} 	
+%	\captionof{figure}{The map results screen}\label{fig:HiMap} 
+%}
 
 Results can also be viewed on a map which is navigable in the same
 way as the phone's native map application. 
@@ -304,12 +328,12 @@ way as the phone's native map application.
 
 (Figure~\ref{fig:HiIndResult})
 
-\marginpar{% 	
-	\begin{overpic}[width=\marginparwidth] 		
-		{img/secondPrototype/indiv_result} 	
-	\end{overpic} 	
-	\captionof{figure}{The home map screen}\label{fig:HiIndResult} 
-}
+%\marginpar{% 	
+%	\begin{overpic}[width=\marginparwidth] 		
+%		{img/secondPrototype/indiv_result} 	
+%	\end{overpic} 	
+%	\captionof{figure}{Screen for a booking slot}\label{fig:HiIndResult} 
+%}
 \begin{enumerate}
 	\item Button to add the displayed booking to the user's basket so they can
 	      continue searching before paying.
@@ -323,8 +347,7 @@ way as the phone's native map application.
 	      for booking before returning them to this page. The book now button
 	      will then change to a link to the page for this current booking as
 	      in figure~\ref{fig:HiIndBooking} so they can make amendments to their
-	      booking at share details to their friends.
-\end{enumerate}
-
-
-
+	      booking at share details to their friends.\end{enumerate}
+	      
+	      
+	      
