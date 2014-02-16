@@ -9,11 +9,13 @@
 \usepackage[parfill]{parskip}
 
 %%% HEADERS & FOOTERS ----------------------------------------------------------
-% \usepackage{fancyhdr}
-\pagestyle{headings}
-% \renewcommand{\headrulewidth}{0pt}
-% \lhead{}\chead{}\rhead{}
-% \lfoot{}\cfoot{page \thepage}\rfoot{}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyheadoffset[R]{3.7cm}
+\renewcommand{\headrulewidth}{0.3pt}
+\rhead{}
+\lhead{\nouppercase{\leftmark}}
+\lfoot{}\cfoot{page \thepage}\rfoot{}
 
 %%% SECTION TITLE APPEARANCE ---------------------------------------------------
 %\usepackage{sectsty}
@@ -54,6 +56,9 @@
 % \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape}
 % \setcounter{tocdepth}{2}
 
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+
 %%% PDF LINKS AND STYLE --------------------------------------------------------
 % \usepackage[unicode=true,
 % 	bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,
@@ -71,6 +76,7 @@
 % 	pdfauthor={}}
 
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{@{}l@{\extracolsep{\fill}}}
 
 \newcommand\marginFig[4][1]{%
 	\marginpar{%
@@ -99,31 +105,31 @@
 \restoregeometry%
 \newpage
 
-%\section{Review of Related Work}
-%\label{sec:review_of_related_work}
-%
-%\input{../Review_of_related_work/Review_of_user_input_methods.tex}
-%\input{../Review_of_related_work/Current_booking_apps.tex}
-%\input{../Review_of_related_work/Review_of_current_sports_booking_systems.tex}
-%\input{../Review_of_related_work/review_of_related_work_app_considerations.tex}
-%
-%% section review_of_related_work (end)
-%
-%\clearpage
-%
-%\section{User Personas}
-%\label{sec:user_personas}
-%
-%\input{../User_Personas/PersonasIntro.tex}
-%
-%% \begin{adjustwidth*}{}{12em}
-%	\input{../User_Personas/Elderly.tex}
-%	\input{../User_Personas/Working.tex}
-%	\input{../User_Personas/Student.tex}
-%	\input{../User_Personas/Child.tex}
-%% \end{adjustwidth*}
-%
-%% section user_personas (end)
+\section{Review of Related Work}
+\label{sec:review_of_related_work}
+
+\input{../Review_of_related_work/Review_of_user_input_methods.tex}
+\input{../Review_of_related_work/Current_booking_apps.tex}
+\input{../Review_of_related_work/Review_of_current_sports_booking_systems.tex}
+\input{../Review_of_related_work/review_of_related_work_app_considerations.tex}
+
+% section review_of_related_work (end)
+
+\clearpage
+
+\section{User Personas}
+\label{sec:user_personas}
+
+\input{../User_Personas/PersonasIntro.tex}
+
+% \begin{adjustwidth*}{}{12em}
+	\input{../User_Personas/Elderly.tex}
+	\input{../User_Personas/Working.tex}
+	\input{../User_Personas/Student.tex}
+	\input{../User_Personas/Child.tex}
+% \end{adjustwidth*}
+
+% section user_personas (end)
 
 \section{First Generation Prototypes}
 \label{sec:first_prototypes}
@@ -133,6 +139,15 @@
 \input{../First_Prototypes/Pro1_Flat.tex}
 
 % section first_prototypes (end)
+
+\clearpage
+
+\section{Second Generation Prototype}
+\label{sec:second_generation_prototype}
+
+\input{../Second_Prototype/HiFi_Pro_Presentation.tex}
+
+% section second_generation_Prototype (end)
 
 \newgeometry{left=3cm}
 \bibliographystyle{plain}
