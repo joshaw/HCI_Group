@@ -146,12 +146,13 @@ user can press the x to close this screen and return to the search.
 		site or the website of that sports facility to pay for the booking.
 \end{enumerate}
 
-\newgeometry{left=3cm}
+\bigskip
 \subsubsection{Evaluation}
 
 \begin{center}
+	\begin{adjustwidth*}{}{-3cm}
 	\renewcommand{\arraystretch}{2}
-	\begin{longtable}{p{0.3\textwidth} c p{0.6\textwidth}}
+	\begin{longtable}{@{\extracolsep{\fill}}p{0.3\linewidth} c p{0.6\linewidth}}
 		\toprule
 		\textbf{Criteria} & \textbf{Rating} & \textbf{Comment}\\
 		\midrule
@@ -197,15 +198,20 @@ user can press the x to close this screen and return to the search.
 		use of the application.\\
 		\bottomrule
 	\end{longtable}
+\end{adjustwidth*}
 \end{center}
 
 \begin{center}
+	\begin{adjustwidth*}{}{-3cm}
 	\renewcommand{\arraystretch}{2}
-	\begin{longtable}{p{0.12\textwidth} p{0.3\textwidth} c p{0.45\textwidth}}
+	\begin{longtable}{@{\extracolsep{\fill}}p{0.3\linewidth} c p{0.6\linewidth}}
 		\toprule
-		\textbf{User} & \textbf{Scenario} & \textbf{Rating} & \textbf{Comment}\\
+		\textbf{Scenario} & \textbf{Rating} & \textbf{Comment}\\
 		\midrule
-		\textbf{Elderly} & Searching for new sports in the area and notifying
+		\midrule
+		\multicolumn{3}{l}{\textbf{Elderly}}\\
+		\cmidrule(r){1-3}
+		Searching for new sports in the area and notifying
 		his wife of the booking. & 0 & Howard is given an immediate visual
 		representation of what sports are available near him when opening the
 		application. However, with his lack of experience with technology, use
@@ -213,52 +219,58 @@ user can press the x to close this screen and return to the search.
 		read results as a list. There is no facility to send information about
 		the booking to his wife.\\
 
-		& Racquet sport with 4 friends on Friday & 0 & Howard could tick only
+		Racquet sport with 4 friends on Friday & 0 & Howard could tick only
 		racquet sports on the sports filter tab and Fridays on the dates tab.
 		However, there is no way for him to bulk book if he wants to regularly
 		play.\\
 
-		& Swimming nearby with knee pain & $-$ & There is currently no way to
+		Swimming nearby with knee pain & $-$ & There is currently no way to
 		search for facilities that have disabled access. This could be included
 		in the description of the facility on the booking page but Howard would
 		still have to look at each search result individually.\\
 
 		\midrule
-		\textbf{Working} & Team sport on Friday including screen sharing with
-		friends& $+$ & Janet can select the relevant sports and dates to show
-		relevant results. Could have quick buttons on the sports tab screen to
-		quick select all team sports to speed this up. There is no quick way to
-		share a set of search parameters.\\
+		\multicolumn{3}{l}{\textbf{Working}}\\
+		\cmidrule(r){1-3}
+		Team sport on Friday including screen sharing with friends& $+$ & Janet
+		can select the relevant sports and dates to show relevant results.
+		Could have quick buttons on the sports tab screen to quick select all
+		team sports to speed this up. There is no quick way to share a set of
+		search parameters.\\
 
-		& Change/cancel booking at late notice & $-$ & As booking payments are
+		Change/cancel booking at late notice & $-$ & As booking payments are
 		held outside the application there is currently no way to cancel
 		bookings or even see previous bookings. Could add a screen to add
 		favourite booking slots to so users can potentially see previous
 		bookings.\\
 
-		& Outdoor sport early on Saturday & $+$ & Janet can select the relevant
+		Outdoor sport early on Saturday & $+$ & Janet can select the relevant
 		sports and dates to show relevant results.Could have quick buttons on
 		the sports tab screen to quick select all outdoor sports to speed this
 		up. The weather prediction on the map screen also helps inform her
 		search here.\\
 
 		\midrule
-		\textbf{Student} & Tennis court at specific times & $+$ & Jenny can
-		select tennis from the sports tab and all preferred dates from the
-		dates tab and then quickly browse through her options on the map across
-		different times at the weekend.\\
+		\multicolumn{3}{l}{\textbf{Student}}\\
+		\cmidrule(r){1-3}
+		Tennis court at specific times & $+$ & Jenny can select tennis from the
+		sports tab and all preferred dates from the dates tab and then quickly
+		browse through her options on the map across different times at the
+		weekend.\\
 
-		& Weekday evening session must be on clay & 0 & Jenny can select all
+		Weekday evening session must be on clay & 0 & Jenny can select all
 		days from the date tab then set the time to evening on the map and
 		scroll through each day seeing which day suits her best. There is no
 		way to specify the type of court or facility being booked.\\
 
-		& Weekly practice with friend with reminders & $-$ & Can navigate
+		Weekly practice with friend with reminders & $-$ & Can navigate
 		through different weeks but no option to bulk buy and no facility for
 		reminders.\\
 
 		\midrule
-		\textbf{Child} & Outdoor sport close to home or on a bus route with
+		\multicolumn{3}{l}{\textbf{Child}}\\
+		\cmidrule(r){1-3}\\
+		Outdoor sport close to home or on a bus route with
 		coach & 0 & If Joe chooses his preferred outdoor sports from the sports
 		tab, he will be shown those close to him straight away. However, there
 		is no indication of bus routes on the map. An option could be added to
@@ -267,7 +279,7 @@ user can press the x to close this screen and return to the search.
 		displayed in the information for individual centers on the book now
 		screen.\\
 
-		& Booking several squash courts for after school tournament & $-$ &
+		Booking several squash courts for after school tournament & $-$ &
 		There is no way for Joe to book several courts at one time or several
 		dates at one time. Could add an option on the booking screen to book
 		several courts at once or add a basket function so users can select all
@@ -276,11 +288,11 @@ user can press the x to close this screen and return to the search.
 		Could have some kind of rating system to the location description on
 		the bookings page and some way to search for highly rated locations.\\
 
-		& Looking for high quality tennis court & $-$ & There is currently
+		Looking for high quality tennis court & $-$ & There is currently
 		little indication of the quality of each location. Could have some
 		kind of rating system in the location description on the bookings page
 		and some way to search for highly rated locations.\\
 		\bottomrule
 	\end{longtable}
+	\end{adjustwidth*}
 \end{center}
-\restoregeometry%
