@@ -1,4 +1,4 @@
-\newpage
+% \newpage
 \subsection{Prototype 2}
 
 \subsubsection{Presentation}
@@ -15,9 +15,9 @@ Choose all criteria before searching
 \marginpar{%
 	\begin{overpic}[width=0.8\marginparwidth]
 		{img/firstPrototypes/Pro2Home_Screen}
-		% \put(-7,94){\framebox{1}}
-		% \put(62,70){\framebox{2}}
-		% \put(3,22){\framebox{3}}
+		\put(60,66){\framebox{1}}
+		\put(60,40){\framebox{2}}
+		\put(60,14){\framebox{3}}
 		% \put(46,23){\framebox{3}}
 		% \put(62,92){\framebox{4}}
 		% \put(5,45){\framebox{5}}
@@ -54,11 +54,19 @@ The home screen offers a choice of three menus
 On selecting `Make a booking', the user will be directed to the initial search
 screen which will be the first step in their search
 
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=0.8\linewidth]{img/firstPrototypes/Pro2First_Screen}
-    \caption{img/firstPrototypes/Pro2FirstScreen
-    }\label{fig:img/firstPrototypes/Pro2First_Screen}
+\begin{figure}[htbp]
+	\centering
+	\begin{overpic}[width=0.8\linewidth]
+    	{img/firstPrototypes/Pro2First_Screen}
+    	\put(68,48){\framebox{1}}
+    	\put(28,44){\framebox{2}}
+    	\put(8,39){\framebox{3}}
+    	\put(88,49){\framebox{4}}
+    	\put(68,22){\framebox{5}}
+    	\put(68,13){\framebox{6}}
+    	\put(68,3){\framebox{7}}
+	\end{overpic}
+	\captionof{figure}{First search screen.}\label{fig:Pro2First_Screen}
 \end{figure}
 
 \begin{enumerate}
@@ -75,19 +83,17 @@ screen which will be the first step in their search
 		bars.
 	\item The user can select how long they would like to play for, chosen from
 		a drop down bar with half hour intervals.
-	\item Takes the user to the next step in the search process.
+	\item The `Next' button takes the user to the next step in the search
+		process.
 \end{enumerate}
 
 \paragraph{Search screen 2}
 \marginpar{%
 	\begin{overpic}[width=0.8\marginparwidth]
 		{img/firstPrototypes/Pro2Second_Screen}
-		% \put(-7,94){\framebox{1}}
-		% \put(62,70){\framebox{2}}
-		% \put(3,22){\framebox{3}}
-		% \put(46,23){\framebox{3}}
-		% \put(62,92){\framebox{4}}
-		% \put(5,45){\framebox{5}}
+		\put(61,58){\framebox{1}}
+		\put(61,29){\framebox{2}}
+		\put(61,19){\framebox{3}}
 	\end{overpic}
 	\captionof{figure}{Second search screen}\label{fig:Pro2Second_Screen}
 }
@@ -100,7 +106,7 @@ The next screen focuses on location.
 		system will suggest locations based on what they have already typed
 	\item The user can use a horizontal slider to specify how far they are
 		willing to travel to play the sport
-	\item If the user requires disables access they can tick the checkbox and
+	\item If the user requires disabled access they can tick the checkbox and
 		the results will only show sports centres which are wheelchair
 		accessible
 \end{enumerate}
@@ -109,12 +115,10 @@ The next screen focuses on location.
 \marginpar{%
 	\begin{overpic}[width=0.8\marginparwidth]
 		{img/firstPrototypes/Pro2Third_Screen}
-		% \put(-7,94){\framebox{1}}
-		% \put(62,70){\framebox{2}}
-		% \put(3,22){\framebox{3}}
-		% \put(46,23){\framebox{3}}
-		% \put(62,92){\framebox{4}}
-		% \put(5,45){\framebox{5}}
+		\put(61,69){\framebox{1}}
+		\put(61,47){\framebox{2}}
+		\put(61,22){\framebox{3}}
+		\put(61,6){\framebox{4}}
 	\end{overpic}
 	\captionof{figure}{Third search screen}\label{fig:Pro2Third_Screen}
 }
@@ -136,12 +140,10 @@ get discounts
 \marginpar{%
 	\begin{overpic}[width=\marginparwidth]
 		{img/firstPrototypes/Pro2Results_screen}
-		% \put(-7,94){\framebox{1}}
-		% \put(62,70){\framebox{2}}
-		% \put(3,22){\framebox{3}}
-		% \put(46,23){\framebox{3}}
-		% \put(62,92){\framebox{4}}
-		% \put(5,45){\framebox{5}}
+		\put(11,73){\framebox{1}}
+		\put(43,51){\framebox{2}}
+		\put(42,23){\framebox{3}}
+		\put(102,20){\framebox{4}}
 	\end{overpic}
 	\captionof{figure}{Results screen}\label{fig:Pro2Results_Screen}
 }
@@ -160,141 +162,134 @@ Screen showing the results of the search
 		site or the website of that sports facility to pay for the booking.
 \end{enumerate}
 
-\newpage
+\fullwidth%
 \subsubsection{Evaluation}
 
-\begin{center}
-	\begin{adjustwidth*}{}{-3cm}
-	\renewcommand{\arraystretch}{2}
-	\begin{longtable}{@{\extracolsep{\fill}}p{0.3\linewidth} c p{0.6\linewidth}}
-		\toprule
-		\textbf{Criteria} & \textbf{Rating} & \textbf{Comment}\\
-		\midrule
-		Visibility of system status & $+$ & Each screen shows the user their
-		progress in the search process \\
+\renewcommand{\arraystretch}{2}
+\begin{longtabu}{p{0.3\linewidth} c X}
+	\toprule
+	\textbf{Criteria} & \textbf{Rating} & \textbf{Comment}\\
+	\midrule
+	Visibility of system status & $+$ & Each screen shows the user
+	their progress in the search process \\
 
-		Match between system and the real world & $+$ & Each field is self
-		explanatory and is clear what is asked of the user.  \\
+	Match between system and the real world & $+$ & Each field is self
+	explanatory and is clear what is asked of the user.  \\
 
-		User control and freedom & $-$ & The hierarchical nature of the system
-		prevents the user from switching screens easily. If they choose to go
-		back they will lose the information they have already typed on the
-		screen they left. Freedom is also restricted as the user is required to
-		fill all fields. For example they must pick a particular sport at a
-		particular time. \\
+	User control and freedom & $-$ & The hierarchical nature of the
+	system prevents the user from switching screens easily. If they
+	choose to go back they will lose the information they have already
+	typed on the screen they left. Freedom is also restricted as the
+	user is required to fill all fields. For example they must pick a
+	particular sport at a particular time. \\
 
-		Consistency and standards & $-$ & The way users specify their criteria
-		varies throughout the search, for example horizontal sliders and
-		steppers to achieve numerical values. Although this would not reduce
-		the clarity of what is asked of the user. \\
+	Consistency and standards & $-$ & The way users specify their
+	criteria varies throughout the search, for example horizontal
+	sliders and steppers to achieve numerical values. Although this
+	would not reduce the clarity of what is asked of the user. \\
 
-		Error prevention & + & Due to the large buttons and very simple
-		interface, there is very little chance of user error. Although the drop
-		down menus could get a little fiddly. If the user does accidentally
-		book the wrong option, they may have the opportunity to change or
-		cancel this booking. \\
+	Error prevention & + & Due to the large buttons and very simple
+	interface, there is very little chance of user error. Although the
+	drop down menus could get a little fiddly. If the user does
+	accidentally book the wrong option, they may have the opportunity
+	to change or cancel this booking. \\
 
-		Recognition rather than re-call & $+$ & Information required on the
-		current search screen does not depend on information on the previous
-		screen. \\
+	Recognition rather than re-call & $+$ & Information required on the
+	current search screen does not depend on information on the
+	previous screen. \\
 
-		Flexibility and efficiency use & 0 & Lacks efficiency due to the fact
-		that the user must progress through all search screens filling in all
-		fields before they can search. \\
+	Flexibility and efficiency use & 0 & Lacks efficiency due to the
+	fact that the user must progress through all search screens filling
+	in all fields before they can search. \\
 
-		Aesthetic and minimalist design & $+$ & The design is very simple so as
-		not to cause any confusion to the user \\
+	Aesthetic and minimalist design & $+$ & The design is very simple
+	so as not to cause any confusion to the user \\
 
-		Help users recognize, diag-nose, and recover from errors & $+$\ & If
-		the user tries to move to the next screen having not filled a field or
-		filled it incorrectly,  they will be shown a descriptive error message
-		in red above that field \\
+	Help users recognize, diag-nose, and recover from errors & $+$\ &
+	If the user tries to move to the next screen having not filled a
+	field or filled it incorrectly,  they will be shown a descriptive
+	error message in red above that field \\
 
-		Help and documentation & $+$ & The help button displayed on every
-		screen takes the user to a guide on how to complete the current page
-		along with FAQ's \\
-		\bottomrule
-	\end{longtable}
-\end{adjustwidth*}
-\end{center}
+	Help and documentation & $+$ & The help button displayed on every
+	screen takes the user to a guide on how to complete the current
+	page along with FAQ's \\
+	\bottomrule
+\end{longtabu}
 
-\begin{center}
-	\begin{adjustwidth*}{}{-3cm}
-	\renewcommand{\arraystretch}{2}
-	\begin{longtable}{@{\extracolsep{\fill}}p{0.3\linewidth} c p{0.6\linewidth}}
-		\toprule
-		\textbf{Scenario} & \textbf{Rating} & \textbf{Comment}\\
-		\midrule
-		\midrule
-		\multicolumn{3}{l}{\textbf{Elderly}}\\
-		\cmidrule(r){1-3}
-		Searching for new sports in the area and notifying his wife of the
-		booking. & $-$ & Howard may find using the drop down menus difficult
-		with his osteoarthritis. There is no feature to notify people of the
-		booking \\
+\renewcommand{\arraystretch}{2}
+\begin{longtabu}{p{0.3\linewidth} c X}
+	\toprule
+	\textbf{Scenario} & \textbf{Rating} & \textbf{Comment}\\
+	\midrule
+	\midrule
+	\multicolumn{3}{l}{\textbf{Elderly}}\\
+	\cmidrule(r){1-3}
+	Searching for new sports in the area and notifying his wife of the
+	booking. & $-$ & Howard may find using the drop down menus difficult
+	with his osteoarthritis. There is no feature to notify people of the
+	booking \\
 
-		Racquet sport with 4 friends on Friday & 0 & Can select four people
-		to play using drop down menu. Would have to specify which racquet sport
-		he wishes to play. No bulk book feature. \\
+	Racquet sport with 4 friends on Friday & 0 & Can select four people
+	to play using drop down menu. Would have to specify which racquet sport
+	he wishes to play. No bulk book feature. \\
 
-		Swimming nearby with knee pain & $+$ & If Howard does not wish to
-		travel far he can either filter the results by distance or specify a
-		maximum distance he is willing to travel (search screen2). If Howards
-		knee pain is particularly bad he may wish to swim somewhere which
-		doesn't require climbing any stairs. He can do this by ticking the
-		wheelchair accessible checkbox. \\
+	Swimming nearby with knee pain & $+$ & If Howard does not wish to
+	travel far he can either filter the results by distance or specify a
+	maximum distance he is willing to travel (search screen2). If Howards
+	knee pain is particularly bad he may wish to swim somewhere which
+	doesn't require climbing any stairs. He can do this by ticking the
+	wheelchair accessible checkbox. \\
 
-		\midrule
-		\multicolumn{3}{l}{\textbf{Working}}\\
-		\cmidrule(r){1-3}
-		Team sport on Friday including screen sharing with friends & $-$ & The
-		app would not support this scenario as there is no option to search for
-		just team sports. There is also no current feature to support screen
-		sharing but this could be incorporated into the final design. \\
+	\midrule
+	\multicolumn{3}{l}{\textbf{Working}}\\
+	\cmidrule(r){1-3}
+	Team sport on Friday including screen sharing with friends & $-$ & The
+	app would not support this scenario as there is no option to search for
+	just team sports. There is also no current feature to support screen
+	sharing but this could be incorporated into the final design. \\
 
-		Change/cancel booking at late notice & 0 & Janet has this option on
-		the home screen. Although the app cannot guarantee the venue allows
-		cancellations \\
+	Change/cancel booking at late notice & 0 & Janet has this option on
+	the home screen. Although the app cannot guarantee the venue allows
+	cancellations \\
 
-		Outdoor sport early on Saturday & 0 & Useful as Janet can specify a
-		time. But again, there is no flexibility in choosing a sport. \\
+	Outdoor sport early on Saturday & 0 & Useful as Janet can specify a
+	time. But again, there is no flexibility in choosing a sport. \\
 
-		\midrule
-		\multicolumn{3}{l}{\textbf{Student}}\\
-		\cmidrule(r){1-3}
-		Tennis court at specific time & $+$ & This scenario is tailored this
-		prototypes design. Jenny can specify that she would like to play tennis
-		at a particular time on a particular day and how long she would like to
-		play for \\
+	\midrule
+	\multicolumn{3}{l}{\textbf{Student}}\\
+	\cmidrule(r){1-3}
+	Tennis court at specific time & $+$ & This scenario is tailored this
+	prototypes design. Jenny can specify that she would like to play tennis
+	at a particular time on a particular day and how long she would like to
+	play for \\
 
-		Weekday evening session must be on clay & 0 & This could be something
-		to incorporate on the screen showing the booking in more detail, along
-		with other information such as court number \\
+	Weekday evening session must be on clay & 0 & This could be something
+	to incorporate on the screen showing the booking in more detail, along
+	with other information such as court number \\
 
-		Weekly practice with friend with reminders & $-$ & There is no
-		notification feature with this prototype. The regular weekly booking
-		feature could also be something that is incorporated in the screen
-		showing more detail about the booking. \\
+	Weekly practice with friend with reminders & $-$ & There is no
+	notification feature with this prototype. The regular weekly booking
+	feature could also be something that is incorporated in the screen
+	showing more detail about the booking. \\
 
-		\midrule
-		\multicolumn{3}{l}{\textbf{Student}}\\
-		\cmidrule(r){1-3}
-		Outdoor sport close to home or on a bus route with coach & $-$ & No
-		feature showing any transport routes. Joe would also have to specify
-		which outdoor sport he is interested in playing \\
+	\midrule
+	\multicolumn{3}{l}{\textbf{Student}}\\
+	\cmidrule(r){1-3}
+	Outdoor sport close to home or on a bus route with coach & $-$ & No
+	feature showing any transport routes. Joe would also have to specify
+	which outdoor sport he is interested in playing \\
 
-		Booking several squash courts for after school tournament & $-$ &
-		With the current design, Joe would have to use the number of players
-		field (4 people = 1 court) to portray how many courts he needs. He can
-		specify how long they need the courts based on how long they think
-		tournament will last. However he would need to choose a particular day.
-		\\
+	Booking several squash courts for after school tournament & $-$ &
+	With the current design, Joe would have to use the number of players
+	field (4 people = 1 court) to portray how many courts he needs. He can
+	specify how long they need the courts based on how long they think
+	tournament will last. However he would need to choose a particular day.
+	\\
 
-		Looking for high quality tennis court & $-$ & There is currently no
-		way of finding the quality of the sport facilities. Pete can however,
-		use the sliders to increase the maximum distance and price they are
-		willing to pay. \\
-		\bottomrule
-	\end{longtable}
-	\end{adjustwidth*}
-\end{center}
+	Looking for high quality tennis court & $-$ & There is currently no
+	way of finding the quality of the sport facilities. Pete can however,
+	use the sliders to increase the maximum distance and price they are
+	willing to pay. \\
+	\bottomrule
+\end{longtabu}
+\restoregeometry%
