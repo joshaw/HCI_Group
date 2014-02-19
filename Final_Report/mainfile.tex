@@ -1,17 +1,17 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,10pt,twoside,draft]{article}
 \usepackage[utf8]{inputenc}
 
 %%% PAGE DIMENSIONS ------------------------------------------------------------
 % \usepackage[marginpar=5cm,  margin=1.5in]{geometry}
-\usepackage[marginpar=5cm, marginparsep=1cm, top=2in, bottom=1.5in, left=3cm, right=7cm]{geometry}
+\usepackage[marginpar=5cm, marginparsep=1cm, top=2in, bottom=1.5in, left=3cm, right=7cm,showframe]{geometry}
 \usepackage[parfill]{parskip}
 
 %%% HEADERS & FOOTERS ----------------------------------------------------------
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyheadoffset[R]{3.84cm}
+% \fancyheadoffset[R]{3.84cm}
 \renewcommand{\headrulewidth}{0.3pt}
 \rhead{}
 \lhead{\nouppercase{\leftmark}}
@@ -26,22 +26,16 @@
 \usepackage[hypcap=false,font=small,labelfont=bf,textfont=it]{caption}
 \usepackage[pdftex]{graphicx}
 \usepackage{booktabs}
-\usepackage{changepage}
+\usepackage[strict]{changepage}
 \usepackage{array}
 \usepackage{enumitem}
-%\usepackage{paralist}
-% \usepackage{verbatim}
-%\usepackage{subfig}
 \usepackage{longtable}
 \usepackage{tabu}
 \usepackage{subcaption}
-% \usepackage{mathtools}
 \usepackage{verbatim}
 \usepackage{listings}
 \usepackage{color}
 \usepackage[percentage]{overpic}
-%\usepackage{multirow}
-% \usepackage{rotating}
 \usepackage{marginfix}
 \usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
 \microtypecontext{spacing=nonfrench}
@@ -86,6 +80,8 @@
 	}
 }
 
+\newcommand\fullwidth{\newgeometry{marginpar=5cm,marginparsep=1cm,top=2in,bottom=1.5in,left=3cm,right=3cm,showframe}}
+
 %%% END Article customizations
 
 %*******************************************************************************
@@ -94,7 +90,7 @@
 
 \begin{document}
 
-\newgeometry{left=3cm}
+\fullwidth%
 
 \input{titlepage.tex}
 
@@ -123,10 +119,10 @@
 \input{../User_Personas/PersonasIntro.tex}
 
 % \begin{adjustwidth*}{}{12em}
-	\input{../User_Personas/Elderly.tex}
-	\input{../User_Personas/Working.tex}
-	\input{../User_Personas/Student.tex}
-	\input{../User_Personas/Child.tex}
+\input{../User_Personas/Elderly.tex}
+\input{../User_Personas/Working.tex}
+\input{../User_Personas/Student.tex}
+\input{../User_Personas/Child.tex}
 % \end{adjustwidth*}
 
 % section user_personas (end)
@@ -151,7 +147,7 @@
 
 % section second_generation_Prototype (end)
 
-\newgeometry{left=3cm}
+\fullwidth%
 \bibliographystyle{plain}
 \bibliography{references}
 \end{document}
