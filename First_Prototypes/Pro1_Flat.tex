@@ -1,4 +1,4 @@
-\newpage
+% \newpage
 \subsection{Prototype 3}
 \label{sub:prototype_3}
 
@@ -83,17 +83,17 @@ the main `bookings' page. For previous bookings, the `cancel' button could
 change to `book again'.
 
 \begin{figure}[htbp]
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{img/firstPrototypes/Pro3Results_1}
-        \caption{Results displayed as a list}\label{fig:Pro3Results_1}
-    \end{subfigure}%
-    \qquad
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{img/firstPrototypes/Pro3Results_2}
-        \caption{Further information}\label{fig:Pro3Results_2}
-    \end{subfigure}
-    \caption{}\label{fig:Pro3Results}
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{img/firstPrototypes/Pro3Results_1}
+		\caption{Results displayed as a list}\label{fig:Pro3Results_1}
+	\end{subfigure}%
+	\qquad
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{img/firstPrototypes/Pro3Results_2}
+		\caption{Further information}\label{fig:Pro3Results_2}
+	\end{subfigure}
+	\caption{}\label{fig:Pro3Results}
 \end{figure}
 
 \paragraph{Tab bar}
@@ -119,142 +119,136 @@ There are two tabs on the bar at the bottom of the screen;
 	\captionof{figure}{Further information is available}\label{fig:Pro3Bookings_2}
 }
 
-\newpage
+\fullwidth%
 \subsubsection{Evaluation}
 
-\begin{center}
-	\begin{adjustwidth*}{}{-3cm}
-	\renewcommand{\arraystretch}{2}
-	\begin{longtable}{@{\extracolsep{\fill}}p{0.3\linewidth} c p{0.6\linewidth}}
-		\toprule
-		\textbf{Criteria} & \textbf{Rating} & \textbf{Comment}\\
-		\midrule
-		Visibility of system status & $+$ & There are only two states in this
-		application --- the search screen and the results page.\\
+\renewcommand{\arraystretch}{2}
+% \begin{longtable}{@{\extracolsep{\fill}}p{0.3\linewidth} c p{0.6\linewidth}}
+\begin{longtabu}{p{0.3\linewidth} c X}
+	\toprule
+	\textbf{Criteria} & \textbf{Rating} & \textbf{Comment}\\
+	\midrule
+	Visibility of system status & $+$ & There are only two states in this
+	application --- the search screen and the results page.\\
 
-		Match between system and the real world & $+$ & Most other booking
-		applications have a similar layout of a search page followed by a list
-		of results (E.g.\ trainline, redspottedhanky). It should be easy for a
-		user who is familiar with this format to use this design.\\
+	Match between system and the real world & $+$ & Most other booking
+	applications have a similar layout of a search page followed by a list
+	of results (E.g.\ trainline, redspottedhanky). It should be easy for a
+	user who is familiar with this format to use this design.\\
 
-		User control and freedom & $+$ & `Back' button in the navigation bar
-		allows the user to change elements of the search criteria.\\
+	User control and freedom & $+$ & `Back' button in the navigation bar
+	allows the user to change elements of the search criteria.\\
 
-		Consistency and standards & $+$ & Information is displayed in a similar
-		way throughout the application. Eg.  Bookings and Results both use
-		lists and selecting a particular item in the list leads to a page with
-		more specific information.\\
+	Consistency and standards & $+$ & Information is displayed in a similar
+	way throughout the application. Eg.  Bookings and Results both use
+	lists and selecting a particular item in the list leads to a page with
+	more specific information.\\
 
-		Error prevention & $-$ & There is no way for a user to tell if they
-		have made a mistake or where the errors are. A pop-up notification
-		could supply this information when the user presses the `search'
-		button.\\
+	Error prevention & $-$ & There is no way for a user to tell if they
+	have made a mistake or where the errors are. A pop-up notification
+	could supply this information when the user presses the `search'
+	button.\\
 
-		Recognition rather than recall & $+$ & Search criteria is displayed on
-		the main page and in the results section.\\
+	Recognition rather than recall & $+$ & Search criteria is displayed on
+	the main page and in the results section.\\
 
-		Flexibility and efficiency of use & $0$ & Novice users may not find this
-		format easy-to-use without instructions.  Experienced users could also
-		search for offers, or their current/previous bookings using the tab bar
-		in addition to using the home screen. \\
+	Flexibility and efficiency of use & $0$ & Novice users may not find this
+	format easy-to-use without instructions.  Experienced users could also
+	search for offers, or their current/previous bookings using the tab bar
+	in addition to using the home screen. \\
 
-		Aesthetic and minimalist design & $0$ & Keeping the search options on
-		different pages prevents the home screen from becoming cluttered.
-		However, presenting the results as a list may not be helpful for users
-		who do not select a specific sport, date, time or location.\\
+	Aesthetic and minimalist design & $0$ & Keeping the search options on
+	different pages prevents the home screen from becoming cluttered.
+	However, presenting the results as a list may not be helpful for users
+	who do not select a specific sport, date, time or location.\\
 
-		Help users recognize, diagnose, and recover from errors & $-$ & There
-		is no way for a user to tell if they have made an error. The only
-		option available is to go `back' and change the search criteria.\\
+	Help users recognize, diagnose, and recover from errors & $-$ & There
+	is no way for a user to tell if they have made an error. The only
+	option available is to go `back' and change the search criteria.\\
 
-		Help and documentation & $-$ & Currently there are no instructions
-		available on how to use the app.\\
-		\bottomrule
-	\end{longtable}
-\end{adjustwidth*}
-\end{center}
+	Help and documentation & $-$ & Currently there are no instructions
+	available on how to use the app.\\
+	\bottomrule
+\end{longtabu}
 
-\begin{center}
-	\begin{adjustwidth*}{}{-3cm}
-	\renewcommand{\arraystretch}{2}
-	\begin{longtable}{@{\extracolsep{\fill}}p{0.3\linewidth} c p{0.6\linewidth}}
-		\toprule
-		\textbf{Scenario} & \textbf{Rating} & \textbf{Comment}\\
-		\midrule
-		\midrule
-		\multicolumn{3}{l}{\textbf{Elderly}}\\
-		\cmidrule(r){1-3}
-		Searching for new sports in the area and notifying
-		his wife of the booking. & $+$ & Howard can search using the location and
-		distance criteria for searching for sorts facilities locally. He can
-		also send the details of his bookings to his wife by using the `share'
-		button.\\
+\renewcommand{\arraystretch}{2}
+\begin{longtabu}{p{0.3\linewidth} c X}
+	\toprule
+	\textbf{Scenario} & \textbf{Rating} & \textbf{Comment}\\
+	\midrule
+	\midrule
+	\multicolumn{3}{l}{\textbf{Elderly}}\\
+	\cmidrule(r){1-3}
+	Searching for new sports in the area and notifying
+	his wife of the booking. & $+$ & Howard can search using the location and
+	distance criteria for searching for sorts facilities locally. He can
+	also send the details of his bookings to his wife by using the `share'
+	button.\\
 
-		Racquet sport with 4 friends on Friday & $0$ & Howard can select the
-		individual sports from a list, there is no option at the moment for
-		racquet sports. He can also choose a Friday, but wouldn't be able to
-		bulk book for a regular session in-app.\\
+	Racquet sport with 4 friends on Friday & $0$ & Howard can select the
+	individual sports from a list, there is no option at the moment for
+	racquet sports. He can also choose a Friday, but wouldn't be able to
+	bulk book for a regular session in-app.\\
 
-		Swimming nearby with knee pain & $-$ & It isn't possible to search
-		for facilities that have disabled access, this could be something to
-		include in the `details' section and in the information pages of
-		individual sports centres.\\
+	Swimming nearby with knee pain & $-$ & It isn't possible to search
+	for facilities that have disabled access, this could be something to
+	include in the `details' section and in the information pages of
+	individual sports centres.\\
 
-		\midrule
-		\multicolumn{3}{l}{\textbf{Working}}\\
-		\cmidrule(r){1-3}
-		Team sport on Friday including screen sharing with friends& $-$ & Janet
-		can select individual sports like netball, football, etc.\  as there is
-		no option for `team sports' and dates. She wouldn't be able to share
-		all the results with her friends but could share individual bookings
-		she selects.\\
+	\midrule
+	\multicolumn{3}{l}{\textbf{Working}}\\
+	\cmidrule(r){1-3}
+	Team sport on Friday including screen sharing with friends& $-$ & Janet
+	can select individual sports like netball, football, etc.\  as there is
+	no option for `team sports' and dates. She wouldn't be able to share
+	all the results with her friends but could share individual bookings
+	she selects.\\
 
-		Change/cancel booking at late notice & $0$ & Using the `Bookings'
-		tab, Janet could find her booking and cancel it using the `cancel'
-		button, or use the information to contact the sports facility to change
-		her booking.\\
+	Change/cancel booking at late notice & $0$ & Using the `Bookings'
+	tab, Janet could find her booking and cancel it using the `cancel'
+	button, or use the information to contact the sports facility to change
+	her booking.\\
 
-		Outdoor sport early on Saturday & $+$ & Currently no quick filters
-		for `outdoor' sports, Janet would have to go through the list of all
-		possible sports and select those that she knows are outdoors.  Or it
-		could be easier for Janet to select Saturday and mornings using the
-		date and time sections and see what sports are availabe.\\
+	Outdoor sport early on Saturday & $+$ & Currently no quick filters
+	for `outdoor' sports, Janet would have to go through the list of all
+	possible sports and select those that she knows are outdoors.  Or it
+	could be easier for Janet to select Saturday and mornings using the
+	date and time sections and see what sports are availabe.\\
 
-		\midrule
-		\multicolumn{3}{l}{\textbf{Student}}\\
-		\cmidrule(r){1-3}
-		Tennis court at specific times & $0$ & Jenny can select tennis only but
-		may have to search a few times to find suitable slots for the different
-		times she is free.\\
+	\midrule
+	\multicolumn{3}{l}{\textbf{Student}}\\
+	\cmidrule(r){1-3}
+	Tennis court at specific times & $0$ & Jenny can select tennis only but
+	may have to search a few times to find suitable slots for the different
+	times she is free.\\
 
-		Weekday evening session must be on clay & $0$ & Jenny can select the
-		whole week and hours in the evenings in the `date' and `time' sections.
-		She would have to check individual sports facilities to see the types
-		of courts available.\\
+	Weekday evening session must be on clay & $0$ & Jenny can select the
+	whole week and hours in the evenings in the `date' and `time' sections.
+	She would have to check individual sports facilities to see the types
+	of courts available.\\
 
-		Weekly practice with friend with reminders & $0$ & There isn't a way
-		for Jenny to book weekly sessions but could book one session a week and
-		share the information with a friend using the `share' button.\\
+	Weekly practice with friend with reminders & $0$ & There isn't a way
+	for Jenny to book weekly sessions but could book one session a week and
+	share the information with a friend using the `share' button.\\
 
-		\midrule
-		\multicolumn{3}{l}{\textbf{Child}}\\
-		\cmidrule(r){1-3}\\
-		Outdoor sport close to home or on a bus route with coach & $0$ & It
-		currently isn't possible to select `outdoor' sports but he could choose
-		a variety of sports in the sports section and can sort by distance. It
-		wouldn't be possible to know if the facilities are close to a bus route
-		but could check with the facilities by contacting them.\\
+	\midrule
+	\multicolumn{3}{l}{\textbf{Child}}\\
+	\cmidrule(r){1-3}\\
+	Outdoor sport close to home or on a bus route with coach & $0$ & It
+	currently isn't possible to select `outdoor' sports but he could choose
+	a variety of sports in the sports section and can sort by distance. It
+	wouldn't be possible to know if the facilities are close to a bus route
+	but could check with the facilities by contacting them.\\
 
-		Booking several squash courts for after school tournament & $0$ & It
-		isn't possible for Joe to book several courts at one time.
+	Booking several squash courts for after school tournament & $0$ & It
+	isn't possible for Joe to book several courts at one time.
 
-		Could have some kind of rating system to the location description on
-		the bookings page and some way to search for highly rated locations.\\
+	Could have some kind of rating system to the location description on
+	the bookings page and some way to search for highly rated locations.\\
 
-		Looking for high quality tennis court & $0$ & It could be possible to
-		include other users ratings of each facility and sort results by these
-		ratings.\\
-		\bottomrule
-	\end{longtable}
-	\end{adjustwidth*}
-\end{center}
+	Looking for high quality tennis court & $0$ & It could be possible to
+	include other users ratings of each facility and sort results by these
+	ratings.\\
+	\bottomrule
+\end{longtabu}
+\restoregeometry%
