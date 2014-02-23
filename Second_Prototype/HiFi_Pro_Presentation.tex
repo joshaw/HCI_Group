@@ -1,6 +1,8 @@
-% Preview body
+\section{Presentation}
 
-\subsection{Presentation}
+Figure~\ref{fig:pro2outline} shows a visual representation of the paths that
+are availible for navigating through the application. Each of the screens shown
+is explored further below.
 
 \paragraph{Home} (Figure~\ref{fig:HiHome})
 
@@ -167,12 +169,12 @@ name.
 
 \paragraph{Date Selection} (Figure~\ref{fig:HiDate})
 
-\marginpar{%
-	\begin{overpic}[width=\marginparwidth]
-		{img/secondPrototype/date}
-	\end{overpic}
-	\captionof{figure}{The date selection screen}\label{fig:HiDate}
-}
+% \marginpar{%
+% 	\begin{overpic}[width=\marginparwidth]
+% 		{img/secondPrototype/date}
+% 	\end{overpic}
+% 	\captionof{figure}{The date selection screen}\label{fig:HiDate}
+% }
 
 All dates which are higlighted on this page will be included in the
 search.
@@ -188,14 +190,28 @@ search.
 		to select multiple dates.
 \end{enumerate}
 
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{img/secondPrototype/date}
+		\caption{The date selection screen}\label{fig:HiDate}
+	\end{subfigure}%
+	\qquad
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{img/secondPrototype/time}
+		\caption{The time selection screen}\label{fig:HiTime}
+	\end{subfigure}
+	\caption{}\label{fig:time-dateSelection}
+\end{figure}
+
 \paragraph{Time Selection} (Figure~\ref{fig:HiTime})
 
-\marginpar{%
-	\begin{overpic}[width=\marginparwidth]
-		{img/secondPrototype/time}
-	\end{overpic}
-	\captionof{figure}{The time selection screen}\label{fig:HiTime}
-}
+% \marginpar{%
+% 	\begin{overpic}[width=\marginparwidth]
+% 		{img/secondPrototype/time}
+% 	\end{overpic}
+% 	\captionof{figure}{The time selection screen}\label{fig:HiTime}
+% }
 
 All hours which are highlighted on this page will be included in the
 search.
@@ -211,12 +227,12 @@ search.
 
 \paragraph{List Results} (Figure~\ref{fig:HiList})
 
-\marginpar{%
-	\begin{overpic}[width=\marginparwidth]
-		{img/secondPrototype/list}
-	\end{overpic}
-	\captionof{figure}{The map results screen}\label{fig:HiList}
-}
+%\marginpar{%
+%	\begin{overpic}[width=\marginparwidth]
+%		{img/secondPrototype/list}
+%	\end{overpic}
+%	\captionof{figure}{The list results screen}\label{fig:HiList}
+%}
 
 This is the default view for search results. Results can be sorted
 by distance, time or price and grouped by sport or location. The user
@@ -237,37 +253,38 @@ page.
 		figure~\ref{fig:HiIndResult}.
 	\item Toggle bar for switching between list and map search view. (Figure~\ref{fig:HiMap})
 \end{enumerate}
-\marginpar{%
-	\begin{overpic}[width=\marginparwidth]
-		{img/secondPrototype/list_group}
-	\end{overpic}
-	\captionof{figure}{The map results screen}\label{fig:HiListGroup}
-}
 
 \begin{figure}[htbp]
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{img/secondPrototype/map}
-		\caption{The map results screen}\label{fig:HiMap}
-	\end{subfigure}%
+		\includegraphics[width=\textwidth]{img/secondPrototype/list}
+		\caption{The list results screen}\label{fig:HiList}
+	\end{subfigure}
 	\qquad
 	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{img/secondPrototype/indiv_result}
-		\caption{Screen for a booking slot}\label{fig:HiIndResult}
-	\end{subfigure}
-	\caption{}\label{fig:MapResult}
+		\includegraphics[width=\textwidth]{img/secondPrototype/list_group}
+		\caption{The grouped list results screen}\label{fig:HiListGroup}
+	\end{subfigure}%
+	\caption{}\label{fig:listsResults}
 \end{figure}
+
+% \marginpar{%
+% 	\begin{overpic}[width=\marginparwidth]
+% 		{img/secondPrototype/list_group}
+% 	\end{overpic}
+% 	\captionof{figure}{The grouped list results screen}\label{fig:HiListGroup}
+% }
 
 \paragraph{Map Results}
 
 (Figure~\ref{fig:HiMap})
 
-%\marginpar{%
-%	\begin{overpic}[width=\marginparwidth]
-%		{img/secondPrototype/map}
-%	\end{overpic}
-%	\captionof{figure}{The map results screen}\label{fig:HiMap}
-%}
+\marginpar{%
+	\begin{overpic}[width=\marginparwidth]
+		{img/secondPrototype/map}
+	\end{overpic}
+	\captionof{figure}{The map results screen}\label{fig:HiMap}
+}
 
 Results can also be viewed on a map which is navigable in the same
 way as the phone's native map application.
@@ -286,12 +303,12 @@ way as the phone's native map application.
 
 (Figure~\ref{fig:HiIndResult})
 
-%\marginpar{%
-%	\begin{overpic}[width=\marginparwidth]
-%		{img/secondPrototype/indiv_result}
-%	\end{overpic}
-%	\captionof{figure}{Screen for a booking slot}\label{fig:HiIndResult}
-%}
+\marginpar{%
+	\begin{overpic}[width=\marginparwidth]
+		{img/secondPrototype/indiv_result}
+	\end{overpic}
+	\captionof{figure}{Screen for a booking slot}\label{fig:HiIndResult}
+}
 \begin{enumerate}
 	\item Button to add the displayed booking to the user's basket so they can
 		continue searching before paying.
