@@ -25,8 +25,8 @@
 \lfoot{}\cfoot{page \thepage}\rfoot{}
 
 %%% SECTION TITLE APPEARANCE ---------------------------------------------------
-%\usepackage{sectsty}
-%\allsectionsfont{\sffamily\mdseries\upshape}
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape}
 
 %%% PACKAGES -------------------------------------------------------------------
 %\usepackage{morefloats}
@@ -47,6 +47,7 @@
 \usepackage{color}
 \usepackage{pdflscape}
 \usepackage[percentage]{overpic}
+\usepackage{pdfpages}
 \usepackage{marginfix}
 \usepackage[%
 	activate={true,nocompatibility},
@@ -191,12 +192,20 @@
 
 \subsection{Cognative Walkthrough}
 \input{../Second_Prototype/Cognitive_Walkthrough_Elderly.tex}
+\input{../Second_Prototype/Cognitive_Walkthrough_Working.tex}
 \input{../Second_Prototype/Cognitive_Walkthrough_Child.tex}
 \restoregeometry%
 
 % section second_generation_Prototype (end)
 
 \fullwidth%
+
+\appendix
+\includepdf{../EvaluationQuestionnaire/build/EvaluationQuestionnaire.pdf}
+
 \bibliographystyle{plain}
 \bibliography{references}
+
 \end{document}
+
+% vim: autochangedir
