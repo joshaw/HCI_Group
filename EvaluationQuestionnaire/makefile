@@ -12,7 +12,7 @@ all:
 	$(BIBTEX) ${DIR}/$(PROJECT) || true
 	$(BUILDTEX)
 	echo -e "\n\n\n"
-	$(BUILDTEX) | grep -i "warning" -A2
+	$(BUILDTEX) #| grep -i "warning" -A2
 clean-all:
 	find ${DIR}/ -type f -delete
 
