@@ -1,12 +1,18 @@
-% Preview body
+\section{Presentation}
 
-\subsection{Presentation}
+Figure~\ref{fig:pro2outline} shows a visual representation of the paths that
+are available for navigating through the application. Each of the screens shown
+is explored further below.
 
 \paragraph{Home} (Figure~\ref{fig:HiHome})
 
 \marginpar{%
 	\begin{overpic}[width=\marginparwidth]
 		{img/secondPrototype/home}
+		\put(-7,69){\framebox{1}}
+		\put(-7,43){\framebox{2}}
+		\put(-7,18){\framebox{3}}
+		\put(62,89){\framebox{4}}
 	\end{overpic}
 	\captionof{figure}{The Home screen}\label{fig:HiHome}
 }
@@ -21,7 +27,7 @@ The user is at first presented with three main options to choose from.
 		of details about themselves:
 
 		\begin{enumerate}
-			\item Their concession status so they potential offers and
+			\item Their concession status so potential offers and
 				discounts can be highlighted in the search results.
 			\item Default search preferences if they regularly search for the
 				same sport, location or time when looking to make a booking.
@@ -36,7 +42,7 @@ The user is at first presented with three main options to choose from.
 	\begin{overpic}[width=\marginparwidth]
 		{img/secondPrototype/bookings}
 	\end{overpic}
-	\captionof{figure}{The main search screen}\label{fig:HiBookings}
+	\captionof{figure}{Current and past bookings screen}\label{fig:HiBookings}
 }
 
 This page shows scrollable lists of current and past bookings the user has
@@ -49,8 +55,12 @@ current booking if the particular location they have booked allows them to.
 \marginpar{%
 	\begin{overpic}[width=\marginparwidth]
 		{img/secondPrototype/indiv_booking}
+		\put(-7,58){\framebox{1}}
+		\put(-7,46){\framebox{2}}
+		\put(-7,38){\framebox{3}}
+		\put(-7,10){\framebox{4}}
 	\end{overpic}
-	\captionof{figure}{The main search screen}\label{fig:HiIndBooking}
+	\captionof{figure}{Current booking details screen}\label{fig:HiIndBooking}
 }
 
 This page displays information for a current booking.
@@ -67,7 +77,7 @@ This page displays information for a current booking.
 		website, get directions to the location and also highlights if the
 		location has parking facilities. In addition to this, the weather
 		prediction for this location at the time of the booking is displayed.
-	\item An button to cancel the booking; a prompt will be displayed asking
+	\item A button to cancel the booking; a prompt will be displayed asking
 		the user to confirm that they definitely wish to cancel the booking.
 		If the location does not allow booking cancellations, this button will
 		be greyed out and attempts to press the button will result in a message
@@ -79,6 +89,15 @@ This page displays information for a current booking.
 \marginpar{%
 	\begin{overpic}[width=\marginparwidth]
 		{img/secondPrototype/search}
+		\put(-7,89){\framebox{1}}
+		\put(-7,80){\framebox{2}}
+		\put(62,80){\framebox{3}}
+		\put(-7,70){\framebox{4}}
+		\put(-7,54){\framebox{5}}
+		\put(-7,39){\framebox{6}}
+		\put(-7,23){\framebox{7}}
+		\put(-7,9){\framebox{8}}
+		\put(62,89){\framebox{9}}
 	\end{overpic}
 	\captionof{figure}{The main search screen}\label{fig:HiSearch}
 }
@@ -116,6 +135,11 @@ the four criteria.
 \marginpar{%
 	\begin{overpic}[width=\marginparwidth]
 		{img/secondPrototype/sport}
+		\put(62,80){\framebox{1}}
+		\put(-7,80){\framebox{2}}
+		\put(62,47){\framebox{3}}
+		\put(-7,8){\framebox{4}}
+		\put(-7,89){\framebox{5}}
 	\end{overpic}
 	\captionof{figure}{The sport selection screen}\label{fig:HiSport}
 }
@@ -129,8 +153,9 @@ The user can choose to search for as many sports at once as they wish.
 		the page. If all sports are selected, this button changes to clear all
 		instead.
 	\item Each sport toggles between selected and unselected when pressed.
-	\item Done button; this returns the user to the search page. This the same
-		for all specific search criteria pages. (Figure~\ref{fig:HiSearch})
+	\item Done button; this returns the user to the search page. This is the
+		same for all specific search criteria pages.
+		(Figure~\ref{fig:HiSearch})
 	\item Help button; displays hovering annotations describing what each part
 		of the page is for.
 \end{enumerate}
@@ -140,20 +165,27 @@ The user can choose to search for as many sports at once as they wish.
 \marginpar{%
 	\begin{overpic}[width=\marginparwidth]
 		{img/secondPrototype/location}
+		\put(-7,75){\framebox{1}}
+		\put(-7,61){\framebox{2}}
+		\put(-7,52){\framebox{3}}
+		\put(-7,36){\framebox{4}}
+		\put(27,17){\framebox{5}}
+		\put(-7,89){\framebox{6}}
 	\end{overpic}
 	\captionof{figure}{The location selection screen}\label{fig:HiLocation}
 }
 
-The user can choose to to search within a distance from their current
+The user can choose to search within a distance from their current
 location or specify a particular location via its postcode or area
 name.
 \begin{enumerate}
 	\item Find location; a button which sets the location using the user's
 		current location.
-	\item Location input text field; when the chooses the first button, this
-		is automatically changed to the postcode of their current location.
-		The user can also type in this field. As they are typing, suggestions
-		will appear in a drop down box to help speed up their search.
+	\item Location input text field; when the user chooses the first button,
+		this is automatically changed to the postcode of their current
+		location.  The user can also type in this field. As they are typing,
+		suggestions will appear in a drop down box to help speed up their
+		search.
 	\item A slider bar to determine how far from the chosen location the user
 		would like to search.
 	\item Public transport; if the checkbox is ticked, the user can choose
@@ -167,14 +199,14 @@ name.
 
 \paragraph{Date Selection} (Figure~\ref{fig:HiDate})
 
-\marginpar{%
-	\begin{overpic}[width=\marginparwidth]
-		{img/secondPrototype/date}
-	\end{overpic}
-	\captionof{figure}{The date selection screen}\label{fig:HiDate}
-}
+% \marginpar{%
+% 	\begin{overpic}[width=\marginparwidth]
+% 		{img/secondPrototype/date}
+% 	\end{overpic}
+% 	\captionof{figure}{The date selection screen}\label{fig:HiDate}
+% }
 
-All dates which are higlighted on this page will be included in the
+All dates which are highlighted on this page will be included in the
 search.
 \begin{enumerate}
 	\item Select all; highlights all dates in the shown month. This button
@@ -188,86 +220,123 @@ search.
 		to select multiple dates.
 \end{enumerate}
 
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\begin{overpic}[width=\textwidth]
+			{img/secondPrototype/date}
+			\put(-7,80){\framebox{1}}
+			\put(-7,71){\framebox{2}}
+			\put(-7,43){\framebox{3}}
+			\put(-7,89){\framebox{4}}
+		\end{overpic}%
+		\captionof{figure}{The date selection screen}\label{fig:HiDate}
+	\end{subfigure}
+	\qquad
+	\begin{subfigure}{0.45\textwidth}
+		\begin{overpic}[width=\textwidth]
+			{img/secondPrototype/time}
+			\put(62,81){\framebox{1}}
+			\put(50,60){\framebox{2}}
+			\put(-7,89){\framebox{3}}
+		\end{overpic}%
+		\captionof{figure}{The time selection screen}\label{fig:HiTime}
+	\end{subfigure}
+	\caption{}\label{fig:time-dateSelection}
+\end{figure}
+
 \paragraph{Time Selection} (Figure~\ref{fig:HiTime})
 
-\marginpar{%
-	\begin{overpic}[width=\marginparwidth]
-		{img/secondPrototype/time}
-	\end{overpic}
-	\captionof{figure}{The time selection screen}\label{fig:HiTime}
-}
+% \marginpar{%
+% 	\begin{overpic}[width=\marginparwidth]
+% 		{img/secondPrototype/time}
+% 	\end{overpic}
+% 	\captionof{figure}{The time selection screen}\label{fig:HiTime}
+% }
 
-All hours which are highlighted on this page will be included in the
-search.
+All hours which are highlighted on this page will be included in the search.
 \begin{enumerate}
-	\item AM and PM buttons; when the am is pressed all morning hours are toggled
-		on or off, likewise for pm.
+	\item AM and PM buttons; when the AM is pressed all morning hours are
+		toggled on or off, likewise for pm.
 	\item The user can either touch an hour to highlight it or swipe across
-		multiple times times highlight many times at once.
+		multiple times to highlight them all at once.
 	\item Help button; displays hovering annotations describing what each part
-		of the page is for including instructions on using swiping gestures
-		to select multiple times.
+		of the page is for including instructions on using swiping gestures to
+		select multiple times.
 \end{enumerate}
 
 \paragraph{List Results} (Figure~\ref{fig:HiList})
 
-\marginpar{%
-	\begin{overpic}[width=\marginparwidth]
-		{img/secondPrototype/list}
-	\end{overpic}
-	\captionof{figure}{The map results screen}\label{fig:HiList}
-}
+%\marginpar{%
+%	\begin{overpic}[width=\marginparwidth]
+%		{img/secondPrototype/list}
+%	\end{overpic}
+%	\captionof{figure}{The list results screen}\label{fig:HiList}
+%}
 
-This is the default view for search results. Results can be sorted
-by distance, time or price and grouped by sport or location. The user
-can change the default sort and grouping options on their my details
-page.
+This is the default view for search results. Results can be sorted by distance,
+time or price and grouped by sport or location. The user can change the default
+sort and grouping options on their `My Details' page.
 \begin{enumerate}
 	\item Button to return to the search page and amend the search criteria.
 	\item Toggle buttons to change how the results are sorted.
-	\item Toggle buttons to change how the results are grouped. By default,
-		the results are not grouped. An example is shown in figure~\ref{fig:HiListGroup}
-		of results grouped by sport. When grouped, a user can expand a chosen
-		sport to see all results for that particular sport. These items will
-		be also be sorted by the chosen sort option.
+	\item Toggle buttons to change how the results are grouped. By default, the
+		results are not grouped. An example is shown in
+		figure~\ref{fig:HiListGroup} of results grouped by sport. When grouped,
+		a user can expand a chosen sport to see all results for that particular
+		sport. These items will be also be sorted by the chosen sort option.
 	\item Scrollable list of results. The user is shown an icon for the sport,
 		the name of the location, the time and date of the booking, the price
 		and the distance of the location from their chosen search location.
 		Selecting a particular booking slot takes the user to the page in
 		figure~\ref{fig:HiIndResult}.
-	\item Toggle bar for switching between list and map search view. (Figure~\ref{fig:HiMap})
+	\item Toggle bar for switching between list and map search view.
+		(Figure~\ref{fig:HiMap})
 \end{enumerate}
-\marginpar{%
-	\begin{overpic}[width=\marginparwidth]
-		{img/secondPrototype/list_group}
-	\end{overpic}
-	\captionof{figure}{The map results screen}\label{fig:HiListGroup}
-}
 
 \begin{figure}[htbp]
 	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{img/secondPrototype/map}
-		\caption{The map results screen}\label{fig:HiMap}
-	\end{subfigure}%
-	\qquad
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{img/secondPrototype/indiv_result}
-		\caption{Screen for a booking slot}\label{fig:HiIndResult}
+	\begin{subfigure}{0.45\textwidth}
+		\begin{overpic}[width=\textwidth]
+			{img/secondPrototype/list}
+			\put(-7,89){\framebox{1}}
+			\put(-7,78){\framebox{2}}
+			\put(61,78){\framebox{3}}
+			\put(62,42){\framebox{4}}
+			\put(62,8){\framebox{5}}
+		\end{overpic}
+		\captionof{figure}{The list results screen}\label{fig:HiList}
 	\end{subfigure}
-	\caption{}\label{fig:MapResult}
+	\qquad
+	\begin{subfigure}{0.45\textwidth}
+		\begin{overpic}[width=\textwidth]
+			{img/secondPrototype/list_group}
+			\put(62,48){\framebox{3}}
+		\end{overpic}
+		\captionof{figure}{The grouped list results screen}\label{fig:HiListGroup}
+	\end{subfigure}%
+	\caption{}\label{fig:listsResults}
 \end{figure}
+
+% \marginpar{%
+% 	\begin{overpic}[width=\marginparwidth]
+% 		{img/secondPrototype/list_group}
+% 	\end{overpic}
+% 	\captionof{figure}{The grouped list results screen}\label{fig:HiListGroup}
+% }
 
 \paragraph{Map Results}
 
 (Figure~\ref{fig:HiMap})
 
-%\marginpar{%
-%	\begin{overpic}[width=\marginparwidth]
-%		{img/secondPrototype/map}
-%	\end{overpic}
-%	\captionof{figure}{The map results screen}\label{fig:HiMap}
-%}
+\marginpar{%
+	\begin{overpic}[width=\marginparwidth]
+		{img/secondPrototype/map}
+		\put(36,53){\framebox{1}}
+		\put(-7,8){\framebox{2}}
+	\end{overpic}
+	\captionof{figure}{The map results screen}\label{fig:HiMap}
+}
 
 Results can also be viewed on a map which is navigable in the same
 way as the phone's native map application.
@@ -286,12 +355,16 @@ way as the phone's native map application.
 
 (Figure~\ref{fig:HiIndResult})
 
-%\marginpar{%
-%	\begin{overpic}[width=\marginparwidth]
-%		{img/secondPrototype/indiv_result}
-%	\end{overpic}
-%	\captionof{figure}{Screen for a booking slot}\label{fig:HiIndResult}
-%}
+\marginpar{%
+	\begin{overpic}[width=\marginparwidth]
+		{img/secondPrototype/indiv_result}
+		\put(-7,69){\framebox{1}}
+		\put(-7,50){\framebox{2}}
+		\put(-7,36){\framebox{3}}
+		\put(-7,9){\framebox{4}}
+	\end{overpic}
+	\captionof{figure}{Screen for a booking slot}\label{fig:HiIndResult}
+}
 \begin{enumerate}
 	\item Button to add the displayed booking to the user's basket so they can
 		continue searching before paying.
@@ -301,9 +374,9 @@ way as the phone's native map application.
 		booking to the basket.
 	\item Details about the location and a weather prediction for the time of
 		the chosen booking.
-	\item Book now button; takes the user an external pay application to pay
+	\item Book now button; takes the user to an external pay application to pay
 		for booking before returning them to this page. The book now button
-		will then change to a link to the page for this current booking as
-		in figure~\ref{fig:HiIndBooking} so they can make amendments to their
+		will then change to a link to the page for this current booking as in
+		figure~\ref{fig:HiIndBooking} so they can make amendments to their
 		booking at share details to their friends.
 \end{enumerate}

@@ -1,0 +1,74 @@
+\subsubsection{Task 4}
+\label{ssub:task_4}
+
+\textbf{Book an outdoor sport, with a professional coach, close to home.}
+
+\textbf{User:} Child
+\begin{enumerate}
+	\item Press `New Booking'.
+	\item Press `Sport' on the search screen.
+	\item Select the `Outdoors' selection option.
+	\item Press `Location' on the search screen.
+	\item Select a maximum distance using the distance slider.
+	\item Ensure the `Public transport' option is selected and choose a
+		preferred travel time.
+	\item Press `Done' to return to the previous screen, and then `Search'.
+	\item Select `Distance' in the `Sort by' options and `Sport' in `Group by'.
+	\item Browse the list of sports offered at the locations found.
+	\item Select a result and select weekly times to book.
+	\item Press `Book Now'.
+\end{enumerate}
+
+\subsubsection{Walkthrough}
+
+\begin{description}
+	\item[Selecting sports to book] Joe does not know exactly which sport it is
+		he would like to book, so he is hesitant about entering the `Sport'
+		menu as he thinks he might be required to select one from a list. Once
+		finding that there is a more relaxed selection menu, so that he can
+		specify just outdoor sports, he is confident he will find something he
+		likes.
+
+	\item[Specifying distance and travel method] When choosing the distance he
+		is prepared to travel, Joe is unsure about the distances he is used to
+		going so doesn't know what value to give. He knows how long it takes to
+		get to school, so enters a value slightly higher than this for the
+		public transport slider and doesn't move the radius slider.
+
+	\item[Sorting and grouping results] Joe has to wait for the results for a
+		few seconds because the search criteria are quite broad. During this
+		time, there is little notification that progress is being made. When
+		the results are shown, he quickly sorts by the distance, as he isn't
+		interested in the price (Pete will pay) or the time (during the summer
+		holidays). Joe has to experiment a couple of times with the `Group by'
+		options as he doesn't quite understand their purpose as he
+		misunderstands it to mean a bulk purchase.
+
+	\item[Making repeated bookings] Joe is pleased that he can book several
+		sessions easily at once as he quickly recognises that the `Repeat
+		Bookings' section shows the same sport at the same time, but on
+		different days. However, after selecting the bookings for the next few
+		weeks, he realises he has added one week too many to the list of
+		bookings to be made. He is not sure that clicking `Book Now' will allow
+		him to remove these mistaken bookings.
+\end{description}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{longtabu}{cccccl}
+	\toprule
+	\textbf{Step} & \textbf{Criteria 1} & \textbf{Criteria 2} &
+	\textbf{Criteria 3} & \textbf{Criteria 4} & \textbf{Success?} \\
+	\midrule
+	1  & y & y & y & y & Success \\
+	2  & y & n & y & y & Success \\
+	3  & y & n & y & y & Success \\
+	4  & y & y & y & y & Success \\
+	5  & y & y & n & n & Success \\
+	6  & y & y & y & y & Success \\
+	7  & y & y & y & n & Success \\
+	8  & y & n & n & y & Fail    \\
+	9  & y & y & y & y & Success \\
+	10 & y & n & n & y & Fail    \\
+	11 & y & y & y & y & Success \\
+	\bottomrule
+\end{longtabu}
