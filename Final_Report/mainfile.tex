@@ -49,6 +49,8 @@
 \usepackage[percentage]{overpic}
 \usepackage{pdfpages}
 \usepackage{marginfix}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
 \usepackage[%
 	activate={true,nocompatibility},
 	final,
@@ -68,7 +70,7 @@
 \usepackage[titles,subfigure]{tocloft}
 % \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 % \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape}
-% \setcounter{tocdepth}{2}
+\setcounter{tocdepth}{2}
 
 \setlength\LTleft{0pt}
 \setlength\LTright{0pt}
@@ -175,6 +177,8 @@
 	\centering
 	\includegraphics[height=\textwidth]{img/secondPrototype/outline.png}
 	\caption{Outline diagram showing navigation paths between screens.
+		Navigation starts, when the user opens the application, at the home
+		screen, shown in the top left.
 	}\label{fig:pro2outline}
 \end{figure}
 \end{landscape}
@@ -183,17 +187,26 @@
 \part{Second Generation Prototype}
 \label{sec:second_generation_prototype}
 
+\input{../Second_Prototype/SecondProtoIntroduction.tex}
 \input{../Second_Prototype/HiFi_Pro_Presentation.tex}
 
 \fullwidth%
 \section{Review}
+\input{../Second_Prototype/EvaluationIntroduction.tex}
 \input{../Second_Prototype/EvaluationHeuristics.tex}
 \input{../Second_Prototype/EvaluationScenarios.tex}
 
-\subsection{Cognitive Walkthrough}
+\section{Cognitive Walkthrough}
 \input{../Second_Prototype/Cognitive_Walkthrough_Elderly.tex}
 \input{../Second_Prototype/Cognitive_Walkthrough_Working.tex}
+\input{../Second_Prototype/Cognitive_Walkthrough_Student.tex}
 \input{../Second_Prototype/Cognitive_Walkthrough_Child.tex}
+
+\newpage
+\input{../EvaluationQuestionnaire/questionnaireInfo.tex}
+
+\section{Conclusion}
+\input{../Second_Prototype/EvaluationConclution.tex}
 \restoregeometry%
 
 % section second_generation_Prototype (end)
@@ -201,9 +214,11 @@
 \fullwidth%
 
 \appendix
+\addcontentsline{toc}{section}{A\hspace{3pt} SUS Questionnaire}
 \includepdf{../EvaluationQuestionnaire/build/EvaluationQuestionnaire.pdf}
+\input{../EvaluationQuestionnaire/questionnaireResultsAppendix.tex}
 
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{references}
 
 \end{document}
