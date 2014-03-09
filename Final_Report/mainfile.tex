@@ -1,13 +1,14 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,10pt,draft]{article}
 \usepackage[utf8]{inputenc}
 
 %%% PAGE DIMENSIONS ------------------------------------------------------------
 % \usepackage[marginpar=5cm,  margin=1.5in]{geometry}
 \usepackage[marginpar=5cm,
 	marginparsep=1cm,
-	top=2in,
+	headsep=0.4cm,
+	top=1.5in,
 	bottom=1.5in,
 	left=3cm,
 	right=7cm]{geometry}
@@ -208,8 +209,9 @@
 \newpage
 \input{../EvaluationQuestionnaire/questionnaireInfo.tex}
 
-\section{Conclusion}
-\input{../Second_Prototype/EvaluationConclution.tex}
+\part{Conclusion}
+\input{../Conclusions/EvaluationConclution.tex}
+\input{../Conclusions/Summary.tex}
 \restoregeometry%
 
 % section second_generation_Prototype (end)
