@@ -14,12 +14,13 @@
 	\captionof{figure}{The Home screen}\label{fig:HiHome}
 }
 
-The user is at first presented with three main options to choose from.
+When the application is first started, the user is at first presented with
+three main options to choose from.
 \begin{enumerate}
 	\item Make a new booking; this button takes the user to a page to input
-		their search criteria. (Figure~\ref{fig:HiSearch})
+		their search criteria (figure~\ref{fig:HiSearch}).
 	\item View their bookings; this button allows the user to see past and
-		present bookings. (Figure~\ref{fig:HiBookings})
+		present bookings (figure~\ref{fig:HiBookings}).
 	\item Input their details; this page allows the user to specify a number
 		of details about themselves:
 
@@ -141,7 +142,8 @@ the four criteria.
 	\captionof{figure}{The sport selection screen}\label{fig:HiSport}
 }
 
-The user can choose to search for as many sports at once as they wish.
+The user can choose to search for as many sports at once as they wish,
+individually, or from a list of groups of sports.
 \begin{enumerate}
 	\item Drop down to choose to display different groups of sport such as
 		outdoor sports, indoor sports, teams sports and favourites which are
@@ -151,8 +153,8 @@ The user can choose to search for as many sports at once as they wish.
 		instead.
 	\item Each sport toggles between selected and unselected when pressed.
 	\item Done button; this returns the user to the search page. This is the
-		same for all specific search criteria pages.
-		(Figure~\ref{fig:HiSearch})
+		same for all specific search criteria pages
+		(figure~\ref{fig:HiSearch}).
 	\item Help button; displays hovering annotations describing what each part
 		of the page is for.
 \end{enumerate}
@@ -287,32 +289,44 @@ sort and grouping options on their `My Details' page.
 		and the distance of the location from their chosen search location.
 		Selecting a particular booking slot takes the user to the page in
 		figure~\ref{fig:HiIndResult}.
-	\item Toggle bar for switching between list and map search view.
-		(Figure~\ref{fig:HiMap})
+	\item Toggle bar for switching between list and map search view
+		(figure~\ref{fig:HiMap}).
 \end{enumerate}
 
 \begin{figure}[htbp]
 	\centering
-	\begin{subfigure}{0.45\textwidth}
-		\begin{overpic}[width=\textwidth]
-			{img/secondPrototype/list}
-			\put(-7,89){\framebox{1}}
-			\put(-7,78){\framebox{2}}
-			\put(61,78){\framebox{3}}
-			\put(62,42){\framebox{4}}
-			\put(62,8){\framebox{5}}
-		\end{overpic}
-		\captionof{figure}{The list results screen}\label{fig:HiList}
-	\end{subfigure}
-	\qquad
-	\begin{subfigure}{0.45\textwidth}
-		\begin{overpic}[width=\textwidth]
-			{img/secondPrototype/list_group}
-			\put(62,48){\framebox{3}}
-		\end{overpic}
-		\captionof{figure}{The grouped list results screen}\label{fig:HiListGroup}
-	\end{subfigure}%
-	\caption{}\label{fig:listsResults}
+	\makebox[\linewidth][l]{%
+		\begin{minipage}{\linewidth}
+			\begin{subfigure}[c]{0.44\textwidth}
+				\begin{overpic}[width=\textwidth]
+					{img/secondPrototype/list}
+					\put(-7,89){\framebox{1}}
+					\put(-7,78){\framebox{2}}
+					\put(61,78){\framebox{3}}
+					\put(62,42){\framebox{4}}
+					\put(62,8){\framebox{5}}
+				\end{overpic}
+				\captionof{figure}{The list results screen}\label{fig:HiList}
+			\end{subfigure}
+			\qquad
+			\begin{subfigure}{0.44\textwidth}
+				\begin{overpic}[width=\textwidth]
+					{img/secondPrototype/list_group}
+					\put(60,48){\framebox{3}}
+				\end{overpic}
+				\captionof{figure}{The grouped list results screen}\label{fig:HiListGroup}
+			\end{subfigure}%
+			\caption{}\label{fig:listsResults}
+		\end{minipage}
+		\begin{minipage}[c]{0.44\linewidth}
+			\begin{overpic}[width=\textwidth]
+				{img/secondPrototype/map}
+				\put(36,53){\framebox{1}}
+				\put(62,8){\framebox{2}}
+			\end{overpic}
+			\captionof{figure}{The map results screen}\label{fig:HiMap}
+		\end{minipage}
+	}
 \end{figure}
 
 % \marginpar{%
@@ -322,18 +336,16 @@ sort and grouping options on their `My Details' page.
 % 	\captionof{figure}{The grouped list results screen}\label{fig:HiListGroup}
 % }
 
-\paragraph{Map Results}
+\paragraph{Map Results} (Figure~\ref{fig:HiMap})
 
-(Figure~\ref{fig:HiMap})
-
-\marginpar{%
-	\begin{overpic}[width=\marginparwidth]
-		{img/secondPrototype/map}
-		\put(36,53){\framebox{1}}
-		\put(-7,8){\framebox{2}}
-	\end{overpic}
-	\captionof{figure}{The map results screen}\label{fig:HiMap}
-}
+% \marginpar{%
+% 	\begin{overpic}[width=\marginparwidth]
+% 		{img/secondPrototype/map}
+% 		\put(36,53){\framebox{1}}
+% 		\put(-7,8){\framebox{2}}
+% 	\end{overpic}
+% 	\captionof{figure}{The map results screen}\label{fig:HiMap}
+% }
 
 Results can also be viewed on a map which is navigable in the same
 way as the phone's native map application.
@@ -348,9 +360,7 @@ way as the phone's native map application.
 		figure~\ref{fig:HiList}.
 \end{enumerate}
 
-\paragraph{Individual Result}
-
-(Figure~\ref{fig:HiIndResult})
+\paragraph{Individual Result} (Figure~\ref{fig:HiIndResult})
 
 \marginpar{%
 	\begin{overpic}[width=\marginparwidth]
