@@ -1,0 +1,51 @@
+\section{Recommendations}
+\label{sec:recommendations}
+
+To take this design forward we would require further prototyping to implement
+the changes suggested in Section~\ref{sec:summary}.  There are a number of
+additional features that we would add and several changes we would make. The
+main aspects we would focus on are:
+
+\begin{itemize}
+	\item Ratings system for each location.
+	\item Easier search options for booking multiple courts at once.
+	\item Search options for length of booking.
+	\item Notifications/reminders.
+	\item Simplified sorting and grouping options.
+	\item Improved error prevention.
+\end{itemize}
+
+As some of these changes are brand new features, it would be important to
+prototype them before implementing them in the final design so that we could
+evaluate whether they actually work in the way a user would want and expect
+them to.
+
+In addition to changing the mobile design, it could be possible to design a
+similar system for the web so that users can make bookings online on a desktop
+computer or laptop. This could be particularly useful for an elderly or
+physically impaired user who finds a mobile phone difficult to use or a user
+without a smartphone. However, this was beyond the scope of this project.
+
+If we were to actually implement the mobile design, there are feasibility
+problems which we would need to overcome. We would need to get the data for the
+available sports at each location and the data for the individual booking slots
+at each location and whether the booking slots were already booked or not. This
+would be possible through two methods:
+
+\begin{enumerate}
+	\item Direct involvement of the sports facilities. They would provide the
+		data directly to us and would allow a connection to their own systems
+		in order to actually make, cancel and change the bookings.
+
+	\item Scraping the data from the websites of each facilities, or get access
+		to the data through APIs provided by these websites. In order to make a
+		booking, the user would be redirected to the website of that particular
+		facility.
+\end{enumerate}
+
+The first option is preferable as it would allow the user to make and amend
+bookings directly through the application. The prototypes that we have made in
+this project would require the involvement of the sports facilities. If, going
+forward, this were to be revealed as unfeasible, we could possibly use the
+second method above. This would require a lot of changes in the design and
+therefore numerous more prototypes.
