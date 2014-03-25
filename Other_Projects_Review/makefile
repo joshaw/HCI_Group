@@ -1,18 +1,21 @@
 PROJECT=OtherProjectsReview
 TEX=pdflatex
+OPTIONS=-interaction nonstopmode\
+		-file-line-error\
+		-output-directory=$(DIR)\
+		-halt-on-error
 BIBTEX=bibtex -terse
 DIR=build
-BUILDTEX=$(TEX) -output-directory=$(DIR) -halt-on-error $(PROJECT).tex
+BUILDTEX=$(TEX) $(OPTIONS) $(PROJECT).tex
 
 CHECKDIR=mkdir -p $(DIR)
 
 all:
 	$(CHECKDIR)
-	$(BUILDTEX)
-	$(BIBTEX) ${DIR}/$(PROJECT) || true
-	$(BUILDTEX)
-	echo -e "\n\n\n"
-	$(BUILDTEX) | grep -i "warning" -A2
+	$(BUILDTEX) | egrep ":[0-9]*:" || true
+	@$(BUILDTEX) > /dev/null
+	@echo -e "\n"
+	@$(BUILDTEX) > /dev/null && echo "Complete"
 clean-all:
 	find ${DIR}/ -type f -delete
 
